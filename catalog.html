@@ -11,8 +11,9 @@
         <div class="header-top">
           <div class="container">
               <a class="logo" href="#">Техномарт</a>
-              <form action="#">
-                <input type="text" name="search" value="Поиск:">
+              <form action="#" method="get">
+                <input type="search" name="search" placeholder="поиск:">
+                <button type="submit"></button>
               </form>
               <a class="marks" href="#">Закладки</a>
               <a class="basket" href="#">Корзина 10</a>
@@ -50,14 +51,27 @@
         <ul class="breadcrumbs">
           <li><a href="#">Каталог</a></li>
           <li><a href="#">Инструмент</a></li>
-          <li class="breadcrumbs-current">Перфораторы</li>
+          <li><a class="breadcrumbs-current">Перфораторы</a></li>
         </ul>
         <h1 class="page-title">Перфораторы</h1>
       <section class="filters">
         <h2 class="visually-hidden">Фильтр товаров</h2>
-        <form action="">
-          <span>Фильтр</span>
-          <span>Цена:</span>
+        <form action="#">
+          <h3>Фильтр</h3>
+          <div class="price">
+            <h3>Цена:</h3>
+            <div class="block">
+              <div class="btn">
+                <div class="line"></div>
+              </div>
+              <div class="block1"></div>
+              <div class="block2"></div>
+            </div>
+            <div class="price-botton">
+              <input class="price" type="text" value="0">
+              <input class="price" type="text" value="3000">
+            </div>
+          </div>
           <span>Производители:</span>
           <label for="Bosch">Bosch</label>
           <input type="checkbox" id="Bosch" checked>
@@ -69,7 +83,7 @@
           <input type="checkbox" id="DeWalt">
           <label for="Hitachi">Bosch</label>
           <input type="checkbox" id="Hitachi">
-          <span>Питание:</span>
+          <h3>Питание:</h3>
           <label for="battery">
             <input type="radio" value="battery" id="battery" checked>Аккумуляторные</label>
           <label for="mains-power">
@@ -80,26 +94,26 @@
     </div>
       <section class="catalog">
         <div class="catalog-main">
-          <ul class="sort">
-            <li>Сортировка</li>
-            <li><a href="#"></a>по цене</li>
-            <li>по типу</li>
-            <li>по функционалу</li>
-          </ul>
+          <div class="sort">
+            <span>Сортировка</span>
+            <a href="#">по цене</a>
+            <a href="#">по типу</a>
+            <a href="#">по функционалу</a>
+            <a class="btn" href="#"></a>
+            <a class="btn" href="#"></a>
+          </div>
           <h2 class="visually-hidden">Список перфораторов</h2>
-          <div class="catalog-list"> <!-- карточки повторяются, это через nth-child делать? -->
+          <div class="catalog-list">
             <div class="catalog-item">
               <div class="hidden">
                 <a class="button" href="#">Купить</a>
                 <a class="button" href="#">В закладки</a>
               </div>
               <img src="" alt="Перфоратор Bosch BFG 3000">
-              <h3>
-                <a href="">
-                  <span class="catalog-category">Перфоратор Bosch</span>
+                <a href="#">
+                  <h3 class="catalog-category">Перфоратор Bosch</h3>
                   <span class="catalog-item-title">BFG 3000</span>
                 </a>
-              </h3>
               <span class="delete">22500</span>
               <b>15500p</b>
             </div>
@@ -109,12 +123,10 @@
                 <a class="button" href="#">В закладки</a>
               </div>
               <img src="" alt="Перфоратор Bosch BFG 6000">
-              <h3>
-                <a href="">
-                  <span class="catalog-category">Перфоратор Bosch</span>
+                <a href="#">
+                  <h3 class="catalog-category">Перфоратор Bosch</h3>
                   <span class="catalog-item-title">BFG 6000</span>
                 </a>
-              </h3>
               <span class="delete">30500</span>
               <b>25500p</b>
             </div>
@@ -123,12 +135,10 @@
                 <a class="button" href="#">Купить</a>
                 <a class="button" href="#">В закладки</a>
               </div>
-              <h3>
-                <a href="">
-                  <span class="catalog-category">Перфоратор Bosch</span>
+                <a href="#">
+                  <h3 class="catalog-category">Перфоратор Bosch</h3>
                   <span class="catalog-item-title">BFG 2000</span>
                 </a>
-              </h3>
               <b>12500p</b>
             </div>
             <div class="catalog-item">
@@ -137,12 +147,10 @@
                 <a class="button" href="#">В закладки</a>
               </div>
               <img src="" alt="Перфоратор Bosch BFG 3000">
-              <h3>
-                <a href="">
-                  <span class="catalog-category">Перфоратор Bosch</span>
+                <a href="#">
+                  <h3 class="catalog-category">Перфоратор Bosch</h3>
                   <span class="catalog-item-title">BFG 3000</span>
                 </a>
-              </h3>
               <span class="delete">22500</span>
               <b>15500p</b>
             </div>
@@ -152,12 +160,10 @@
                 <a class="button" href="#">В закладки</a>
               </div>
               <img src="" alt="Перфоратор Bosch BFG 6000">
-              <h3>
-                <a href="">
-                  <span class="catalog-category">Перфоратор Bosch</span>
+                <a href="#">
+                  <h3 class="catalog-category">Перфоратор Bosch</h3>
                   <span class="catalog-item-title">BFG 6000</span>
                 </a>
-              </h3>
               <span class="delete">30500</span>
               <b>25500p</b>
             </div>
@@ -167,12 +173,10 @@
                 <a class="button" href="#">В закладки</a>
               </div>
               <img src="" alt="Перфоратор Bosch BFG 2000">
-              <h3>
-                <a href="">
-                  <span class="catalog-category">Перфоратор Bosch</span>
+                <a href="#">
+                  <h3 class="catalog-category">Перфоратор Bosch</h3>
                   <span class="catalog-item-title">BFG 2000</span>
                 </a>
-              </h3>
               <b>12500p</b>
             </div>
             <div class="catalog-item">
@@ -181,12 +185,10 @@
                 <a class="button" href="#">В закладки</a>
               </div>
               <img src="" alt="Перфоратор Bosch BFG 3000">
-              <h3>
-                <a href="">
-                  <span class="catalog-category">Перфоратор Bosch</span>
+                <a href="#">
+                  <h3 class="catalog-category">Перфоратор Bosch</h3>
                   <span class="catalog-item-title">BFG 3000</span>
                 </a>
-              </h3>
               <span class="delete">22500</span>
               <b>15500p</b>
             </div>
@@ -196,12 +198,10 @@
                 <a class="button" href="#">В закладки</a>
               </div>
               <img src="" alt="Перфоратор Bosch BFG 6000">
-              <h3>
-                <a href="">
-                  <span class="catalog-category">Перфоратор Bosch</span>
+                <a href="#">
+                  <h3 class="catalog-category">Перфоратор Bosch</h3>
                   <span class="catalog-item-title">BFG 6000</span>
                 </a>
-              </h3>
               <span class="delete">30500</span>
               <b>25500p</b>
             </div>
@@ -211,17 +211,15 @@
                 <a class="button" href="#">В закладки</a>
               </div>
               <img src="" alt="Перфоратор Bosch BFG 2000">
-              <h3>
-                <a href="">
-                  <span class="catalog-category">Перфоратор Bosch</span>
+                <a href="#">
+                  <h3 class="catalog-category">Перфоратор Bosch</h3>
                   <span class="catalog-item-title">BFG 2000</span>
                 </a>
-              </h3>
               <b>12500p</b>
             </div>
           </div>
         </div>
-        <div class="pagination-list">
+        <div class="pagination">
           <a class="pagination-item pagination-item-current" href="#">1</a>
           <a class="pagination-item">2</a>
           <a class="pagination-item" href="#">3</a>
