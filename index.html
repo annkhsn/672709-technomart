@@ -11,7 +11,7 @@
         <div class="header-top">
           <div class="container">
               <a class="logo" href="#">Техномарт</a
-              <form action="#" method="get">
+              <form action="https://echo.htmlacademy.ru" method="get">
                 <input type="search" name="search" placeholder="поиск:">
                 <button type="submit"></button>
               </form>
@@ -289,12 +289,35 @@
           </ul>
           <a class="about-us-button" href="#">Подробнее о компании</a>
         </div>
-        <div class="maps">
+        <div class="map">
           <h2>Контакты</h2>
           <p>Вы можете забрать товар сами,
           заехав в наш офис</p>
-          <div class="map-fon"><a></a></div>
+          <div class="modal-map"><a>
+            <img src="img/map.jpg" width="970" height="476" alt="Офис компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург">
+          </a>
+          <button class="modal-close" type="button">
+          </div>
           <a class="maps-button" href="#">заблудились? напишите нам</a>
+          <form class="user" method="post"
+          action="https://echo.htmlacademy.ru">
+            <p>
+              <label for="user-name">Ваше имя</label><br>
+              <input id="user-name" type="text"
+               name="name" placeholder="Имя Фамилия">
+            </p>
+            <p>
+              <label for="user-email">Ваш e-mail</label><br>
+              <input id="user-email" type="text"
+               name="email" placeholder="email@example.com">
+            </p>
+            <p>
+              <label for="email-text">Текст письма</label><br>
+                <textarea name="email-text" id="email-text" rows="">В свободной форме</textarea>
+            </p>
+            <button type="submit">Отправить</button>
+            <button class="modal-close" type="button">
+          </form>
         </div>
       </section>
     </main>
