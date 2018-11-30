@@ -5,6 +5,7 @@
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
     <title>HTML Academy: Техномарт</title>
+    <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700|PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
   </head>
   <body>
     <header>
@@ -12,7 +13,7 @@
           <div class="container">
               <a class="logo" href="#">Техномарт</a>
               <form action="https://echo.htmlacademy.ru" method="get">
-                <input type="search" name="search" value="Найти" placeholder="поиск:">
+                <input type="search" name="search" value="Перфоратор" placeholder="Поиск:">
                 <button type="submit"></button>
               </form>
               <a class="marks" href="#">Закладки</a>
@@ -20,7 +21,7 @@
               <a class="order" href="#">Оформить заказ</a>
           </div>
         </div>
-        <div class="header-bottom">
+        <div class="header-contact">
           <div class="container">
             <div class="about">Интернет-магазин строительных материалов и инструментов для ремонта</div>
             <div class="header-contacts">
@@ -79,25 +80,25 @@
               <div class="slide-text">
                 <div class="slide-title">Перфораторы</div>
                 <p>Настоящие мужские игрушки</p>
-                <a class="button" href="#" aria-label="открыть каталог">Открыть каталог</a>
+                <a class="button" href="#">Открыть каталог</a>
               </div>
             </div>
             <div class="slide">
               <img src="img/slide-2.jpg" width="620" height="266" alt="слайд2">
               <div class="slide-text">
                 <div class="slide-title">Дрели</div>
-                <p>Настоящие мужские игрушки</p>
-                <a class="button" href="#" aria-label="Открыть каталог">Открыть каталог</a>
+                <p>Соседям на радость!</p>
+                <a class="button" href="#">Открыть каталог</a>
               </div>
             </div>
           </div>
         </div>
         <div class="features-item">
-          <div>
+          <div class="discounts">
             <h2>Скидки 50%</h2>
             <a href="#">на 350 товаров</a>
           </div>
-          <div>
+          <div class="delivery">
             <h2>Доставка</h2>
             <a href="#">бесплатно</a>
           </div>
@@ -258,14 +259,19 @@
               <div class="slide-item">
                 <div class="service-text">
                   <div class="service-title">Гарантия</div>
-                  <p>текст</p>
+                  <p>Если купленный у нас товар поломается или заискрит,
+                  а также в случае пожара, спровоцированного его возгаранием,
+                  вы всегда можете быть уверены в нашей гарантии.
+                  Мы обменяем сгоревший товар на новый.
+                  Дом уж восстановите как-нибудь сами.</p>
                 </div>
               </div>
 
               <div class="slide-item">
                 <div class="service-text">
                   <div class="service-title">Кредит</div>
-                  <p>текст</p>
+                  <p>Залезть в долговую яму стало проще!
+                  Кредитные консультанты придут вам на помощь.</p>
                   <a href="#">Отправить заявку</a>
                 </div>
               </div>
@@ -299,25 +305,27 @@
           <button class="modal-close" type="button" aria-label="Закрыть"></button>
           </div>
           <a class="maps-button" href="#">заблудились? напишите нам</a>
-          <form class="user" method="post"
-          action="https://echo.htmlacademy.ru">
-            <p>
-              <label for="user-name">Ваше имя</label>
-              <input id="user-name" type="text"
-               name="name" placeholder="Имя Фамилия">
-            </p>
-            <p>
-              <label for="user-email">Ваш e-mail</label>
-              <input id="user-email" type="text"
-               name="email" placeholder="email@example.com">
-            </p>
-            <p>
-              <label for="email-text">Текст письма</label>
-                <textarea name="email-text" id="email-text" rows="5">В свободной форме</textarea>
-            </p>
-            <button type="submit">Отправить</button>
-            <button class="modal-close" type="button"></button>
-          </form>
+          <div class="comment">
+            <form class="user" method="post"
+            action="https://echo.htmlacademy.ru">
+              <p>
+                <label for="user-name">Ваше имя</label>
+                <input id="user-name" type="text"
+                 name="name" placeholder="Имя Фамилия">
+              </p>
+              <p>
+                <label for="user-email">Ваш e-mail</label>
+                <input id="user-email" type="text"
+                 name="email" placeholder="email@example.com">
+              </p>
+              <p>
+                <label for="email-text">Текст письма</label>
+                  <textarea name="email-text" id="email-text" rows="5">В свободной форме</textarea>
+              </p>
+              <div class="comment-button"><button type="submit">Отправить</button></div>
+              <button class="modal-close" type="button"></button>
+            </form>
+          </div>
         </div>
       </section>
     </main>

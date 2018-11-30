@@ -1,0 +1,484 @@
+body {
+  margin: 0;
+  padding: 0;
+
+  font-family: PTSans;
+  font-size: 13px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.85;
+  letter-spacing: normal;
+  color: #000000;
+}
+a {
+  text-decoration: none;
+  color: white;
+}
+.header-top {
+  font-family: Cuprum;
+  font-size: 17px;
+  background-color: #293449;
+}
+.logo:hover {
+  background-color: #ca2c37;
+}
+.logo:active {
+  background-color: #ba2732;
+}
+.order{
+  width: 150px;
+  height: 42px;
+  background-color: #5fbb2d;
+}
+.order:active {
+  color: rgba(255, 255, 255, 0.5);
+  background-color: #518534;
+}
+.marks:active,
+.basket:active {
+  background-color: #161d29;
+  color: rgba(255, 255, 255, 0.6);
+}
+.header-top input{
+  font-family: Cuprum;
+  font-size: 17px;
+  line-height: 1.06;
+  text-align: left;
+  color:white;
+  background-color: #212a3a;
+}
+.header-top input:hover{
+  font-family: Cuprum;
+  font-size: 17px;
+  line-height: 1.06;
+  text-align: left;
+  color:black;
+  background-color: white;
+}
+.header-contact {
+  background-color: #f3f7f8;
+}
+.main-nav {
+  font-family: Cuprum;
+  font-size: 17px;
+  line-height: 1;
+  background-color: #32425c;
+  list-style: none;
+}
+.main-nav li:hover{
+background-color: #293449;
+}
+.main-nav li:active{
+background-color: #293449;
+color: rgba(255, 255, 255, 0.5);
+opacity: 0.5;
+}
+.main-nav li {
+    list-style: none;
+}
+.about {
+  width: 196px;
+  height: 60px;
+  font-family: Cuprum;
+  font-size: 16px;
+  font-style: italic;
+  line-height: 1.44;
+  text-align: left;
+  color: #ee3643;
+}
+.logo {
+  width: 220px;
+  height: 47px;
+  box-shadow: inset 0px -5px 0 0 rgba(0, 0, 0, 0.24);
+  background-color: #ee3643;
+}
+.header-contacts a {
+  width: 144px;
+  height: 21px;
+  font-family: Cuprum;
+  font-size: 21px;
+  line-height: 1;
+  text-align: left;
+  color: #ee3643;
+}
+.addres {
+  width: 250px;
+  height: 13px;
+  font-family: Cuprum;
+  font-size: 14px;
+  line-height: 1.71;
+  text-align: center;
+  color: #32425c;
+}
+.user-navigation {
+  font-family: Cuprum;
+  font-size: 21px;
+  line-height: 1;
+  text-align: left;
+}
+.user-navigation a {
+  color: #000000;
+}
+.features-item h2 {
+  font-family: Cuprum;
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 1.25;
+}
+.features-item a {
+  font-family: Cuprum;
+  font-size: 14px;
+  line-height: 1.25;
+  text-align: center;
+  background-color: #e5e5e5;
+}
+.features-item a:hover {
+  background-color: #cccccc;
+}
+.features-item a:active{
+  background-color: #b2b2b2;
+}
+.material {
+   background-color: #ffbf47;
+}
+.tool {
+  background-color: #3bbce3;
+}
+.mechanism {
+  background-color: #dc91d8;
+}
+.discounts {
+  background-color: #8ed78f;
+}
+.delivery{
+  background-color: #ffc047;
+}
+.slide-title {
+  font-family: Cuprum;
+  font-size: 36px;
+  font-weight: bold;
+  font-style: normal;
+}
+.slide-text p {
+  font-family: Cuprum;
+  font-size: 18px;
+}
+.slide-text .button {
+  font-family: Cuprum;
+  font-size: 14px;
+  line-height: 1.25;
+  text-align: center;
+  width: 195px;
+  height: 38px;
+  background-color: #ee3643;
+}
+.slide-text .button:hover {
+  background-color: #ca2c37;
+}
+.slide-text .button:active {
+  background-color: #ba2732;
+}
+.products-top ,
+.brends-top {
+  background-color: #f9f5f0;
+}
+.products-top a ,
+.brends-top a {
+  background-color: #ee3643;
+}
+.catalog-category ,
+.catalog-item-title {
+  font-family: PTSans;
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 1.11;
+  text-align: center;
+  color: #000000;
+}
+.delete {
+  font-size: 17.5px;
+  font-weight: bold;
+  line-height: 1;
+  text-align: center;
+  color: #a9a9a9;
+  text-decoration: line-through;
+}
+.price-item {
+  font-size: 17.5px;
+  font-weight: bold;
+  line-height: 1;
+  text-align: center;
+}
+.button-order {
+  font-family: Cuprum;
+  font-size: 14px;
+  line-height: 1.29;
+  text-align: center;
+  color:white;
+  box-shadow: inset 0px -3px 0 0 #367315;
+  background-color: #63a63e;
+}
+.button-order:hover {
+  background-color: #5fbb2d;
+}
+.button-order:active{
+  background-color:#518534;
+}
+.button-marks {
+  font-family: Cuprum;
+  font-size: 14px;
+  line-height: 1.29;
+  text-align: center;
+  color: #32425c;
+  background-color: white;
+}
+.button-marks:active {
+  color: rgba(50, 66, 92, 0.3);
+
+}
+.service {
+  background-color: #f3f7f8;
+}
+.title-service h2 {
+  font-family: Cuprum;
+  font-size: 30px;
+  line-height: 1;
+}
+.title-service p {
+  line-height: 1.85;
+}
+.service-title {
+  font-family: Cuprum;
+  font-size: 21px;
+  font-weight: bold;
+  line-height: 1.43;
+  text-align: left;
+  color:white;
+  width: 240px;
+  height: 61px;
+  box-shadow: inset 0px -1px 0 0 #33445a;
+  background-color: #32425c;
+}
+.service-title:hover {
+  background-color:#293449;
+}
+.service-title:active {
+  color: #32425c;
+  background-color:#ffffff;
+}
+.service-text a {
+  font-family: Cuprum;
+  font-size: 14px;
+  line-height: 1.25;
+  background-color: #ff5357;
+}
+.contacts h2 {
+  font-family: Cuprum;
+  font-size: 30px;
+}
+.about-us ul {
+  font-family: Cuprum;
+  font-size: 18px;
+  list-style: none;
+}
+.about-us-button,
+.maps-button {
+  font-family: Cuprum;
+  font-size: 14px;
+  line-height: 1.25;
+  text-align: center;
+  background-color: #ee3643;
+}
+.comment p {
+  font-family: Cuprum;
+font-size: 17.5px;
+line-height: 1;
+text-align: left;
+color: black;
+}
+#user-name,
+#user-email,
+#email-text {
+  font-size: 14px;
+  line-height: 1.25;
+  text-align: left;
+  color: #a9a9a9;
+}
+.comment-button {
+  width: 620px;
+  height: 112px;
+  background-color: #f4f4f4;
+}
+.comment-button button{
+  width: 460px;
+  height: 38px;
+  background-color: #ee3643;
+font-family: Cuprum;
+font-size: 14px;
+line-height: 1.25;
+text-align: center;
+color: white;
+}
+
+.footer-top {
+  background-color: #32425c;
+  list-style: none;
+}
+.footer-top ul {
+  list-style: none;
+}
+.footer-contacts h2 {
+  width: 220px;
+  height: 68px;
+  box-shadow: inset 0px -5px 0 0 rgba(0, 0, 0, 0.24);
+  background-color: #ee3643;
+}
+.footer-contacts p ,
+.footer-contacts a {
+  font-family: Cuprum;
+  font-size: 18px;
+  line-height: 1.33;
+  text-align: left;
+  color: #f3f7f9;
+}
+.footer-nav a {
+  font-family: Cuprum;
+  font-size: 18px;
+  line-height: 1.33;
+  text-align: left;
+  color: #f3f7f9;
+}
+.footer-nav-products a {
+  font-family: Cuprum;
+  font-size: 18px;
+  line-height: 1.33;
+  text-align: left;
+  color: #ffd180;
+}
+.footer-bottom {
+  background-color: #293449;
+}
+.copyright {
+  font-family: Cuprum;
+  font-size: 16px;
+  line-height: 1.13;
+  text-align: left;
+  color: white;
+}
+.email ,
+.develop  {
+  font-family: Cuprum;
+  font-size: 16px;
+  line-height: 1.13;
+  text-align: left;
+  color: white;
+}
+  .email a ,
+  .develop a{
+  color: #ffd180;
+}
+.breadcrumbs a {
+line-height: 1.38;
+letter-spacing: normal;
+text-align: left;
+color: #000000;
+}
+.breadcrumbs li {
+  list-style: none;
+}
+.container .page-title {
+  font-family: Cuprum;
+  font-size: 30px;
+  line-height: 1;
+  text-align: left;
+  color: #32425c;
+  background-color: #f3f7f8;
+}
+.filters h3 {
+  line-height: 1.38;
+  text-align: left;
+  background-color: #f7f3ec;
+}
+.price {
+  background-color: #f7f3ec;
+}
+.price h3 {
+  font-size: 17px;
+  font-weight: bold;
+  line-height: 1.76;
+  text-align: left;
+  background-color: white;
+}
+.sort  {
+  line-height: 1.38;
+  text-align: left;
+  color: #000000;
+}
+.sort-nav a,
+.sort-btn .btn  {
+  line-height: 1.38;
+  color: #b2b2b2;
+}
+.sort-nav a:hover,
+.sort-btn .btn:hover {
+  color: black;
+  background-color: white;
+}
+.sort-nav a:active,
+.sort-btn .btn:active {
+  color: #ee3643;
+}
+.filters ul {
+  list-style: none;
+}
+.price-botton .price {
+  font-size: 17px;
+  line-height: 1.06;
+  text-align: center;
+}
+.pagination-item {
+ line-height: 1.38;
+ text-align: center;
+ color: black;
+}
+.pagination-item-current {
+  background-color: #ee3643;
+}
+.pagination-item:hover {
+  border: 1px solid #bdc6ca;
+}
+.pagination-item:active {
+  border: 1px solid #ee3643;
+}
+.article h2 {
+  font-family: Cuprum;
+font-size: 30px;
+line-height: 1;
+}
+.article p {
+  text-align: left;
+}
+.article {
+  background-color: #f3f7f8;
+}
+.footer-nav a:hover,
+.footer-nav-products a:hover {
+  text-decoration: underline;
+}
+.footer-nav a:active,
+.footer-nav-products a:active {
+  opacity: 0.5;
+}
+.email a:hover,
+.develop a:hover {
+  text-decoration: underline;
+}
+.email  a:active,
+.develop a:active {
+  color: #ee3643;
+}
+.footer-social a:hover,
+.footer-social a:active {
+  background-color: #ee3643;
+}
