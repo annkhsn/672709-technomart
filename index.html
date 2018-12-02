@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="css/style.css">
     <title>HTML Academy: Техномарт</title>
     <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700|PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
+    <link href="css/outline.css" rel="stylesheet">
   </head>
   <body>
     <header>
@@ -16,21 +17,23 @@
                 <input type="search" name="search" value="Перфоратор" placeholder="Поиск:">
                 <button type="submit"></button>
               </form>
-              <a class="marks" href="#">Закладки</a>
-              <a class="basket" href="#">Корзина</a>
+              <a class="marks" href="#">Закладки: 0</a>
+              <a class="basket" href="#">Корзина: 0</a>
               <a class="order" href="#">Оформить заказ</a>
           </div>
         </div>
         <div class="header-contact">
           <div class="container">
-            <div class="about">Интернет-магазин строительных материалов и инструментов для ремонта</div>
-            <div class="header-contacts">
-              <a href="tel:+7(812)555-05-55">+7(812)555-05-55</a>
-              <span class="addres">г. Санкт-Петербург, ул. Б. Конюшенная, д.</span>
-            </div>
-            <div class="user-navigation container">
-              <a href="#">Войти</a>
-              <a href="#">Регистрация</a>
+            <div class="contact-column">
+              <div class="about">Интернет-магазин строительных материалов и инструментов для ремонта</div>
+              <div class="header-contacts">
+                <a href="tel:+7(812)555-05-55">+7(812)555-05-55</a><br>
+                <span class="addres">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</span>
+              </div>
+              <div class="user-navigation">
+                <a href="#">Войти</a>
+                <a href="#">Регистрация</a>
+              </div>
             </div>
             <nav class="main-nav" aria-label="Содержание">
               <ul>
@@ -109,7 +112,7 @@
           <h2>Популярные товары</h2>
           <a class="products-button" href="#">Все популярные товары</a>
         </div>
-        <div class="products">
+        <div class="products-card">
 
           <div class="products-item">
             <div class="products-active">
@@ -213,7 +216,7 @@
             <h2>Популярные производители</h2>
             <a class="products-button" href="#">Все производители</a>
           </div>
-          <div class="brends">
+          <div class="brends-item">
             <a href="#"><img src="img/bosch.jpg" width="126" height="37" alt="Bosch"></a>
             <a href="#"><img src="img/Makita.jpg" width="123" height="40" alt="Makita"></a>
             <a href="#"><img src="img/dewalt.jpg" width="146" height="44" alt="DeWalt"></a>
@@ -280,6 +283,7 @@
       </section>
 
       <section class="contacts">
+        <div class="container">
         <div class="about-us">
           <h2>Компания Техномарт</h2>
           <p>Настоящий мужской шоппинг начинается здесь!Огромный выбор товаров для ремонта и
@@ -301,7 +305,7 @@
           <p>Вы можете забрать товар сами,
           заехав в наш офис</p>
           <div class="modal-map">
-            <a href="#"><img src="img/map.jpg" width="970" height="476" alt="Офис компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург"></a>
+            <img src="img/map.jpg" width="970" height="476" alt="Офис компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург">
           <button class="modal-close" type="button" aria-label="Закрыть"></button>
           </div>
           <a class="maps-button" href="#">заблудились? напишите нам</a>
@@ -327,17 +331,18 @@
             </form>
           </div>
         </div>
+      </div>
       </section>
     </main>
     <footer>
       <div class="footer-top">
         <div class="container">
           <div class="footer-contacts">
-            <h2><a href="index.html">Техномарт</a></h2>
+            <h2><a class="footer-logo" href="index.html">Техномарт</a></h2>
             <p>г. Санкт-Петербург, ул. Б. Конюшенная, д.19/8</p>
             <a href="tel:+7(812)555-05-55">+7(812)555-05-55</a>
           </div>
-          <div>
+          <div class="footer-column">
             <ul class="footer-nav">
               <li><a href="#">Компания</a></li>
               <li><a href="#">Новости</a></li>
@@ -363,7 +368,6 @@
             <a class="social-button" href="#" aria-label="Техномарт на Фейсбуке">Фейсбук</a>
             <a class="social-button" href="#" aria-label="Техномарт в Инстаграме">Инстаграм</a>
           </div>
-          <div class="footer-copyright">
             <div class="email">
               <p>Обратная связь:</p>
               <a href="#">mail@htmlacademy.ru</a>
@@ -372,7 +376,7 @@
               <p>Разработано-</p>
               <a href="https://htmlacademy.ru/intensive/htmlcss">htmlacademy.ru</a>
             </div>
-          </div>
+
         </div>
       </div>
     </footer>
