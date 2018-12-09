@@ -103,7 +103,7 @@ img {
   background-position: 0 0;
   top: 13px;
   left: 10px;
-  width: 5px;
+  width: 15px;
   height: 15px;
 }
 .basket-catalog::before {
@@ -1269,10 +1269,10 @@ fieldset{
   border: none;
   padding-bottom: 25px;
 }
-input[type=checkbox] {
+fieldset input[type=checkbox] {
 	display: none;
 }
-input[type=radio] {
+fieldset input[type=radio] {
 	display: none;
 }
 
@@ -1299,7 +1299,7 @@ fieldset label {
   color: #000000;
   text-transform: uppercase;
 }
-label::before{
+ fieldset label::before{
   content: "";
   position: absolute;
   background-image: url(../img/checkbox-off.png);
