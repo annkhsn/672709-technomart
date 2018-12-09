@@ -90,23 +90,23 @@
               <legend>Производители:</legend>
               <ul>
                 <li>
-                  <input type="checkbox" id="Bosch" checked>
-                  <label for="Bosch">Bosch</label>
+                  <input type="checkbox" id="bosch" checked>
+                  <label class="checked" for="Bosch">Bosch</label>
                 </li>
                 <li>
                   <input type="checkbox" id="interscop">
                   <label for="interscop">Интерскоп</label>
                 </li>
                 <li>
-                  <input type="checkbox" id="Makita" checked>
-                  <label for="Makita">Makita</label>
+                  <input type="checkbox" id="makita" checked>
+                  <label class="checked" for="Makita">Makita</label>
                 </li>
                 <li>
-                  <input type="checkbox" id="DeWalt">
+                  <input type="checkbox" id="dewalt">
                   <label for="DeWalt">DeWalt</label>
                 </li>
                 <li>
-                  <input type="checkbox" id="Hitachi">
+                  <input type="checkbox" id="hitachi">
                   <label for="Hitachi">Hitachi</label>
                 </li>
               </ul>
@@ -115,16 +115,16 @@
               <legend>Питание:</legend>
               <ul>
                 <li>
-                  <label for="battery">
-                    <input type="radio" name="product-group" value="battery" id="battery" checked>Аккумуляторные</label>
+                  <label class="on" for="battery">
+                    <input  type="radio" name="product-group" value="battery" id="battery" checked>Аккумуляторные</label>
                 </li>
                 <li>
-                  <label for="mains-power">
+                  <label class="off" for="mains-power">
                     <input type="radio" name="product-group" value="mains-power" id="mains-power">Сетевые</label>
                 </li>
               </ul>
             </fieldset>
-            <input type="submit" value="Показать">
+            <input class="button" type="submit" value="Показать">
           </form>
         </section>
         <section class="catalog">
@@ -186,6 +186,7 @@
               </div>
 
               <div class="catalog-item">
+                <div class="flag flag-new">новинка</div>
                 <div class="actions">
                   <a href="#" class="buy">Купить</a>
                   <a href="#" class="bookmark">В закладки</a>
@@ -208,6 +209,7 @@
               </div>
 
               <div class="catalog-item">
+                <div class="flag flag-new">новинка</div>
                 <div class="actions">
                   <a href="#" class="buy">Купить</a>
                   <a href="#" class="bookmark">В закладки</a>

@@ -388,6 +388,18 @@ padding: 11px 25px 11px 48px;
   width: 44px;
   height: 65px;
 }
+.material::before {
+  content: "";
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  background-image: url(../img/new-flag.png);
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  width: 60px;
+  height: 59px;
+}
+
 .tool {
   background-color: #3bbce3;
   position: relative;
@@ -611,6 +623,7 @@ margin-bottom: 85px;
  width: 220px;
  min-height:145px;
  border:1px solid #ccc;
+ margin-bottom: 20px;
 }
 .slide {
   display: flex;
@@ -739,6 +752,9 @@ margin-bottom: 85px;
   min-width: 255px;
   padding: 10px 0;
   border-radius: 5px;
+}
+.brends-top {
+  margin-bottom: 20px;
 }
 .map{
 width: 300px;
@@ -1110,17 +1126,29 @@ width: 300px;
   margin: 0;
   display: flex;
   width: 360px;
-  padding: 0 50px;
+  padding: 0 30px;
 }
 .breadcrumbs li {
+  position: relative;
   list-style: none;
   padding: 25px 20px;
 }
-.breadcrumbs::after{
+.breadcrumbs::before{
   content: "";
   position: absolute;
   top: 30px;
-  left: 10px;
+  left: 30px;
+  background-image: url(../img/icon-right-small.jpg);
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  width: 8px;
+  height: 12px;
+}
+.breadcrumbs li::after{
+  content: "";
+  position: absolute;
+  top: 30px;
+  right: 0px;
   background-image: url(../img/icon-right-small.jpg);
   background-repeat: no-repeat;
   background-position: 0 0;
@@ -1194,13 +1222,31 @@ legend  {
   margin-bottom: 20px;
   text-transform: uppercase;
 }
-
-.block .btn {
+.block {
+  position: relative;
   width: 220px;
-  height: 80px;
+  min-height: 80px;
   background-color: #f7f3ec;
   margin-bottom: 10px;
   border-radius: 3px;
+}
+.block1::before {
+  content: "";
+  position: absolute;
+  background-image: url(../img/filter-button.png);
+  top: 30px;
+  left: 20px;
+  width: 20px;
+  height: 22px;
+}
+.block2::after {
+  content: "";
+  position: absolute;
+  background-image: url(../img/filter-button.png);
+  top: 30px;
+  right: 20px;
+  width: 20px;
+  height: 22px;
 }
 .price-botton{
   display: flex;
@@ -1223,12 +1269,22 @@ fieldset{
   border: none;
   padding-bottom: 25px;
 }
+input[type=checkbox] {
+	display: none;
+}
+input[type=radio] {
+	display: none;
+}
+
 .filters ul {
   margin: 0;
   padding: 0;
 }
 .filters li {
-  padding: 15px 0;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  padding: 15px 35px;
 }
 legend {
   width: 220px;
@@ -1242,6 +1298,58 @@ fieldset label {
   line-height: 1.33;
   color: #000000;
   text-transform: uppercase;
+}
+label::before{
+  content: "";
+  position: absolute;
+  background-image: url(../img/checkbox-off.png);
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  top:12px;
+  left: 0px;
+  width: 27px;
+  height: 23px;
+}
+.checked::before{
+  content: "";
+  position: absolute;
+  background-image: url(../img/check-on.png);
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  top:12px;
+  left: 0px;
+  width: 27px;
+  height: 23px;
+}
+.on::before{
+  content: "";
+  position: absolute;
+  background-image: url(../img/radio-on.png);
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  top:12px;
+  left: 0px;
+  width: 25px;
+  height: 25px;
+}
+.off::before{
+  content: "";
+  position: absolute;
+  background-image: url(../img/radio-off.png);
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  top:12px;
+  left: 0px;
+  width: 25px;
+  height: 25px;
+}
+.filter .button{
+  width: 140px;
+  background-color: white;
+  border: 2px solid #e5e5e5;
+  padding: 10px 40px;
+  text-transform: uppercase;
+  border-radius: 3px;
 }
 .sort  {
   display: flex;
@@ -1266,18 +1374,20 @@ fieldset label {
   width: 350px;
 }
 .sort-nav a,
-.sort-btn .btn  {
+.sort-btn .btn {
   line-height: 1.38;
   color: #b2b2b2;
+  border-bottom: 1px dotted #ee3643;
 }
 .sort-nav a:hover,
 .sort-btn .btn:hover {
   color: black;
-  background-color: white;
+  border-bottom: 1px solid #ee3643;
 }
 .sort-nav a:active,
 .sort-btn .btn:active {
   color: #ee3643;
+  border-bottom: none;
 }
 .filters ul {
   list-style: none;
@@ -1356,7 +1466,8 @@ fieldset label {
 }
 .social-button{
   background-color: #000000;
-  border-radius: 50px;
+  width: 110px;
+  border-radius: px;
 }
 .vk-button{
   content: "";
