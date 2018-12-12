@@ -14,9 +14,9 @@
   <header>
     <div class="header-top">
       <div class="container">
-        <a class="logo" href="index.html">Техномарт</a>
+        <a class="logo" href="index.html"></a>
         <form action="https://echo.htmlacademy.ru" method="get">
-          <input type="search" name="search" placeholder="поиск:">
+          <input type="search" name="search" placeholder="Поиск:">
           <button type="submit"></button>
         </form>
         <a class="marks" href="#">Закладки: 0</a>
@@ -27,15 +27,14 @@
     <div class="header-contact-catalog">
       <div class="container">
         <div class="contact-column">
-          <div class="about">Интернет-магазин строительных материалов и инструментов для ремонта</div>
+          <div class="about">Интернет-магазин строительных материалов и<br> инструментов для ремонта</div>
           <div class="header-contacts">
-            <a href="tel:+7(812)555-05-55">+7(812)555-05-55</a>
-            <p class="addres">г. Санкт-Петербург, ул. Б. Конюшенная, д.</p>
+            <a href="tel:+7(812)555-05-55">+7 (812) 555-05-55</a>
+            <p class="addres">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
           </div>
           <div class="inner-user-navigation">
             <div class="user-login">
               <a href="#">Равшан Джамшутович</a>
-
             </div>
             <div class="user-order">
               <a href="#">Мои заказы</a>
@@ -90,24 +89,24 @@
               <legend>Производители:</legend>
               <ul>
                 <li>
-                  <input type="checkbox" id="bosch" checked>
-                  <label class="checked" for="Bosch">Bosch</label>
+                  <input type="checkbox" class="checkbox" id="bosch" checked>
+                  <label  for="bosch">Bosch</label>
                 </li>
                 <li>
-                  <input type="checkbox" id="interscop">
+                  <input type="checkbox" class="checkbox" id="interscop">
                   <label for="interscop">Интерскоп</label>
                 </li>
                 <li>
-                  <input type="checkbox" id="makita" checked>
-                  <label class="checked" for="Makita">Makita</label>
+                  <input type="checkbox" class="checkbox" id="makita" checked>
+                  <label  for="makita">Makita</label>
                 </li>
                 <li>
-                  <input type="checkbox" id="dewalt">
-                  <label for="DeWalt">DeWalt</label>
+                  <input type="checkbox" class="checkbox" id="dewalt">
+                  <label for="dewalt">DeWalt</label>
                 </li>
                 <li>
-                  <input type="checkbox" id="hitachi">
-                  <label for="Hitachi">Hitachi</label>
+                  <input type="checkbox" class="checkbox" id="hitachi">
+                  <label for="hitachi">Hitachi</label>
                 </li>
               </ul>
             </fieldset>
@@ -115,12 +114,15 @@
               <legend>Питание:</legend>
               <ul>
                 <li>
-                  <label class="on" for="battery">
-                    <input  type="radio" name="product-group" value="battery" id="battery" checked>Аккумуляторные</label>
+                  <label for="battery" class="radio">
+                  <input  type="radio" name="product-group" id="battery">
+                  <div class="radio__text">
+                  Аккумуляторные</div></label>
                 </li>
                 <li>
-                  <label class="off" for="mains-power">
-                    <input type="radio" name="product-group" value="mains-power" id="mains-power">Сетевые</label>
+                  <label for="mains-power" class="radio">
+                  <input type="radio" name="product-group"  id="mains-power">
+                  <div class="radio__text">Сетевые</div></label>
                 </li>
               </ul>
             </fieldset>
@@ -144,6 +146,7 @@
             <h2 class="visually-hidden">Список перфораторов</h2>
             <div class="catalog-items">
               <div class="catalog-item">
+                <div class="flag flag-new visually-hidden">новинка</div>
                 <div class="actions">
                   <a href="#" class="buy">Купить</a>
                   <a href="#" class="bookmark">В закладки</a>
@@ -154,6 +157,7 @@
                 <div class="price">15 500 Р.</div>
               </div>
               <div class="catalog-item">
+                <div class="flag flag-new visually-hidden">новинка</div>
                 <div class="actions">
                   <a href="#" class="buy">Купить</a>
                   <a href="#" class="bookmark">В закладки</a>
@@ -175,6 +179,7 @@
                 <div class="price">12 500 Р.</div>
               </div>
               <div class="catalog-item">
+                <div class="flag flag-new visually-hidden">новинка</div>
                 <div class="actions">
                   <a href="#" class="buy">Купить</a>
                   <a href="#" class="bookmark">В закладки</a>
@@ -198,6 +203,7 @@
               </div>
 
               <div class="catalog-item">
+                <div class="flag flag-new visually-hidden">новинка</div>
                 <div class="actions">
                   <a href="#" class="buy">Купить</a>
                   <a href="#" class="bookmark">В закладки</a>
@@ -221,6 +227,7 @@
               </div>
 
               <div class="catalog-item">
+                <div class="flag flag-new visually-hidden">новинка</div>
                 <div class="actions">
                   <a href="#" class="buy">Купить</a>
                   <a href="#" class="bookmark">В закладки</a>
@@ -232,6 +239,7 @@
               </div>
 
               <div class="catalog-item">
+                <div class="flag flag-new visually-hidden">новинка</div>
                 <div class="actions">
                   <a href="#" class="buy">Купить</a>
                   <a href="#" class="bookmark">В закладки</a>
@@ -248,7 +256,7 @@
               <a class="pagination-item pagination-item-current" href="#" aria-label="Страница 1">1</a>
               <a class="pagination-item">2</a>
               <a class="pagination-item" href="#" aria-label="Страница 3">3</a>
-              <a class="pagination-item" href="#" aria-label="Следущая страница">Следующая</a>
+              <a class="pagination-item pangination-next" href="#" aria-label="Следущая страница">Следующая</a>
             </div>
 
       </div>
@@ -309,7 +317,7 @@
       </div>
     </div>
   </footer>
-  <div class="modal-basket">
+  <div class="modal-basket modal">
     <p>Товар добавлен в карзину!</p>
     <div class="buttons">
       <a href="#" class="order-btn">Оформить заказ</a>

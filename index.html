@@ -14,9 +14,9 @@
   <header>
     <div class="header-top">
       <div class="container">
-        <a class="logo" href="#">Техномарт</a>
+        <a class="logo" href="#"></a>
         <form action="https://echo.htmlacademy.ru" method="get">
-          <input type="search" name="search" placeholder="Поиск:">
+          <input class="search" type="search" name="search" placeholder="Поиск:">
           <button type="submit"></button>
         </form>
         <a class="marks" href="#">Закладки: 0</a>
@@ -27,9 +27,9 @@
     <div class="header-contact">
       <div class="container">
         <div class="contact-column">
-          <div class="about">Интернет-магазин строительных материалов и инструментов для ремонта</div>
+          <div class="about">Интернет-магазин строительных материалов и<br> инструментов для ремонта</div>
           <div class="header-contacts">
-            <a href="tel:+7(812)555-05-55">+7(812)555-05-55</a>
+            <a href="tel:+7(812)555-05-55">+7 (812) 555-05-55</a>
             <p class="addres">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
           </div>
           <div class="user-navigation">
@@ -122,6 +122,7 @@
       </div>
       <div class="catalog-items">
         <div class="catalog-item">
+          <div class="flag flag-new visually-hidden">новинка</div>
           <div class="actions">
             <a href="#" class="buy">Купить</a>
             <a href="#" class="bookmark">В закладки</a>
@@ -132,6 +133,7 @@
           <div class="price">25 500 Р.</div>
         </div>
         <div class="catalog-item">
+          <div class="flag flag-new visually-hidden">новинка</div>
           <div class="actions">
             <a href="#" class="buy">Купить</a>
             <a href="#" class="bookmark">В закладки</a>
@@ -142,6 +144,7 @@
           <div class="price">15 500 Р.</div>
         </div>
         <div class="catalog-item">
+          <div class="flag flag-new visually-hidden">новинка</div>
           <div class="actions">
             <a href="#" class="buy">Купить</a>
             <a href="#" class="bookmark">В закладки</a>
@@ -199,9 +202,9 @@
           <input class="slider-btn" type="radio" name="slide-btn" id="slide-3">
 
           <div class="service-controls">
-            <label for="slide-1">Доставка</label>
-            <label for="slide-2">Гарантия</label>
-            <label for="slide-3">Кредит</label>
+            <label class="slide-1" for="slide-1">Доставка</label>
+            <label class="slide-2" for="slide-2">Гарантия</label>
+            <label class="slide-3" for="slide-3">Кредит</label>
           </div>
 
           <div class="slide-item">
@@ -240,12 +243,12 @@
     <section class="contacts">
       <div class="container">
         <div class="about-us">
-          <h2>Компания Техномарт</h2>
+          <h2>Компания <Техномарт></h2>
           <p>Настоящий мужской шоппинг начинается здесь!Огромный выбор товаров для ремонта и
             строительства не оставит равнодушными любителей сэкономить
             на гастарбайтерах.
           </p>
-          <p>Мы можем доставить ваш товар в самые отдаленные точки России!
+          <p>Мы можем доставить ваш товар в самые отдаленные точки России!<br>
             Техномарт работает со многими транспортными компаними:
           </p>
           <ul>
@@ -259,9 +262,8 @@
           <h2>Контакты</h2>
           <p>Вы можете забрать товар сами,<br>
             заехав в наш офис:</p>
-          <div class="modal-map">
+          <div class="map-fon">
             <a href="#"></a>
-            <button class="modal-close" type="button" aria-label="Закрыть"></button>
           </div>
           <a class="maps-button" href="#">заблудились? напишите нам</a>
           <div class="comment">
@@ -333,16 +335,20 @@
     </div>
   </footer>
 
-  <div class="login-link">
+  <section class="login-link modal">
     <form class="login-form" method="post" action="https://echo.htmlacademy.ru">
       <p class="login-items">
         <label for="login-name">Ваше имя:</label>
         <input id="login-text" type="text" name="name" placeholder="Представьтесь, пожалуйста">
       </p>
-      <div class="comment-button"><button type="submit">Отправить</button></div>
-
+    <div class="comment-button"><button type="submit">Отправить</button></div>
     </form>
-  </div>
+  </section>
+  <section class="modal-map modal">
+    <h2 class="visually-hidden">Как до нас добраться</h2>
+    <p><img src="img/map.jpg" width="970" height="446" alt="Офис компании п  адресу ул. Большая Конюшенная 19/8, Санкт-Петербург"></p>
+    <button class="modal-close" type="button"></button>
+  </section>
 </body>
 
 </html>
