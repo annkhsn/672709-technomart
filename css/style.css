@@ -43,7 +43,7 @@ img {
   text-align: center;
   text-transform: uppercase;
   width: 220px;
-  box-shadow: inset 0px -5px 0 0 rgba(0, 0, 0, 0.24);
+  box-shadow: 0px -5px 0 0 rgba(0, 0, 0, 0.24);
   background-color: #ee3643;
 }
 .logo:hover {
@@ -854,6 +854,7 @@ width: 300px;
   padding-top: 15px;
   padding-bottom: 16px;
   padding-left: 21px;
+   box-shadow: inset 0px -1px 0 0 #33445a;
 }
 .service-controls .slide-2:hover,
 .service-controls .slide-3:hover {
