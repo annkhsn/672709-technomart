@@ -35,6 +35,7 @@ img {
   padding: 0 10px;
 }
 .logo {
+  position: relative;
   font-family: Cuprum;
   font-size: 24px;
   line-height: 24px;
@@ -43,8 +44,17 @@ img {
   text-align: center;
   text-transform: uppercase;
   width: 220px;
-  box-shadow: 0px -5px 0 0 rgba(0, 0, 0, 0.24);
   background-color: #ee3643;
+}
+.logo::after{
+  content: "";
+  position: absolute;
+  box-shadow: inset 0px -5px 0 0 rgba(0, 0, 0, 0.24);
+  background-color: #ee3643;
+  top: 42px;
+  left: 0px;
+  width: 220px;
+  height: 5px;
 }
 .logo:hover {
   background-color: #ca2c37;
@@ -66,8 +76,7 @@ input[type="search"]{
   background-position: 18px 12px;
   width: 270px;
   border: none;
-  padding: 12px 0;
-  padding-left: 48px;
+  padding: 12px 12px 12px 48px;
   outline: none;
   cursor: pointer;
 }
@@ -173,8 +182,7 @@ color: rgba(255, 255, 255, 0.5);
 opacity: 0.5;
 }
 .main-nav li {
-  padding: 20px;
-  padding-bottom: 23px;
+  padding: 20px 20px 23px 20px;
   list-style: none;
   text-align: center;
 }
@@ -255,12 +263,11 @@ opacity: 0.5;
   display: inline-block;
   box-sizing: border-box;
   width: 299px;
-  padding: 10px 0px;
+  padding: 9px 0px 11px 46px;
   margin-bottom: 6px;
   background-image: url(../img/icon-user.png);
   background-repeat: no-repeat;
   background-position: 13px 10px;
-  padding-left: 46px;
   margin-left: 51px;
 }
 .login:hover{
@@ -291,7 +298,6 @@ opacity: 0.5;
   background-image: url(../img/icon-login.png);
   background-repeat: no-repeat;
   background-position: 15px 11px;
-
   padding: 10px 25px 11px 47px;
   margin-right: 5px;
 }
@@ -340,7 +346,6 @@ opacity: 0.5;
 .features-item-column a,
 .features-item a {
   margin: 0;
-  padding: 0;
   width: 135px;
   display: inline-block;
   box-sizing: border-box;
@@ -351,7 +356,7 @@ opacity: 0.5;
   background-color: rgba(0, 0, 0, 0.1);
   color: white;
   text-transform: uppercase;
-  padding: 10px 0;
+  padding: 10px 0 10px 0;
   border-radius: 3px;
   margin-bottom: 21px;
 }
@@ -367,9 +372,7 @@ opacity: 0.5;
 .features-item div {
   box-sizing: border-box;
   width: 300px;
-  padding-top: 22px;
-  padding-left: 23px;
-
+  padding: 22px 0px 0px 23px;
 }
 .features-item{
   display: flex;
@@ -571,13 +574,10 @@ opacity: 0.5;
   justify-content: center;
   height:168px;
   padding-right: 7px;
-  margin-bottom: 13px;
-  margin-right: 10px;
-
+  margin: 0px 10px 13px 0px;
 }
 .catalog-item .image img{
-    max-width:100%;
-
+  max-width:100%;
 }
 .catalog-item .title{
   padding:0 25px;
@@ -652,6 +652,7 @@ opacity: 0.5;
   box-shadow: 0px 4px 10px 0px rgba(41, 52, 73 , 0.5);
   opacity: 0.3;
 }
+
 .slide {
   display: flex;
   flex-direction: column;
@@ -679,23 +680,49 @@ opacity: 0.5;
   font-size: 18px;
   color: #ffffff;
 }
-.slider-2 {
-  display: none;
-}
 .slider-img{
   position: relative;
+  overflow: hidden;
+  margin-right: 20px;
 }
-.toggle1{
+.slides {
+  width: 200%;
+}
+.slider-1,
+.slider-2 {
+  position: relative;
+  float: left;
+}
+.slider-controls {
   position: absolute;
-  bottom: 32px;
+  bottom: 10px;
   left: 290px;
-  index: 10;
+  z-index: 2;
 }
-.toggle2{
-  position: absolute;
-  bottom: 32px;
-  right: 290px;
-
+.slider-controls label {
+  display: inline-block;
+  margin: 0 3px;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  cursor: pointer;
+  border: 3px solid white;
+  bottom: 10px;
+  z-index: 2;
+  background-color: white;
+}
+input[type="radio"]{
+  display: none;
+}
+#btn-1:checked ~ .slider-controls label[for="btn-1"],
+#btn-2:checked ~ .slider-controls label[for="btn-2"] {
+  background-color: #ee3643;
+}
+#btn-1:checked ~ .slides  {
+  transform: translate(0);
+}
+#btn-2:checked ~ .slides  {
+  transform: translate(-620px);
 }
 .arrow1{
   background-image: url(../img/icon-left.png);
@@ -707,6 +734,7 @@ opacity: 0.5;
   width: 22px;
   height: 40px;
   cursor: pointer;
+  z-index: 1;
 }
 .arrow2{
   background-image: url(../img/icon-right.png);
@@ -718,11 +746,13 @@ opacity: 0.5;
   width: 22px;
   height: 40px;
   cursor: pointer;
+  z-index: 1;
 }
 .arrow1:hover,
 .arrow2:hover{
   opacity: 0.3;
 }
+
 .slide-text .button {
   position: absolute;
   bottom: 22px;
@@ -806,10 +836,8 @@ width: 300px;
   position: relative;
   box-sizing: border-box;
   width: 400px;
-  padding: 0;
-  margin: 0;
-  padding-top: 66px;
-  margin-bottom: 67px;
+  padding: 66px 0px 0px 0px ;
+  margin: 0px 0px 67px 0px;
 }
 .title-service::after{
   content: "";
@@ -841,7 +869,6 @@ width: 300px;
   display: inline-block;
   width: 240px;
   vertical-align: top;
-
 }
 .service-controls label{
   display: block;
@@ -851,10 +878,9 @@ width: 300px;
   line-height: 1.43;
   color: white;
   background-color: #32425c;
-  padding-top: 15px;
-  padding-bottom: 16px;
-  padding-left: 21px;
-   box-shadow: inset 0px -1px 0 0 #33445a;
+  padding: 15px 0px 16px 22px;
+  box-shadow: inset 0px -1px 0 0 #33445a;
+  cursor: pointer;
 }
 .service-controls .slide-2:hover,
 .service-controls .slide-3:hover {
@@ -1002,12 +1028,11 @@ margin-top: 30px;
  }
  .footer-contacts h2 {
    margin: 0;
-   padding: 0;
    font-family: Cuprum;
    font-size: 30px;
    line-height: 30px;
    width: 220px;
-   padding: 19px 0;
+   padding: 19px 0px 19px 0px;
    box-shadow: inset 0px -5px 0 0 rgba(0, 0, 0, 0.24);
    background-color: #ee3643;
    text-align: center;
@@ -1048,8 +1073,7 @@ margin-top: 30px;
   justify-content: space-between;
   width: 550px;
   padding: 0;
-  margin-top: 39px;
-  margin-bottom: 32px;
+  margin: 39px 0px 32px 0px;
 }
  .footer-nav-products a {
    font-family: Cuprum;
@@ -1068,8 +1092,7 @@ margin-top: 30px;
   line-height: 1.13;
   color: white;
   width: 940px;
-  padding-top:37px;
-  padding-bottom:30px;
+  padding:37px 0px 30px 0px;
 }
 .copyright {
   margin-right: 166px;
@@ -1135,7 +1158,6 @@ padding: 0;
 }
 
 .page-title  {
-  padding: 0;
   margin: 0;
   font-family: Cuprum;
   font-size: 30px;
@@ -1147,9 +1169,8 @@ padding: 0;
   text-align: left;
   text-transform: uppercase;
   color: #32425c;
-  padding: 30px 0;
+  padding: 30px 0 30px 28px;
   margin-bottom: 19px;
-  padding-left: 28px;
 }
 .container .page-title {
   font-family: Cuprum;
@@ -1244,28 +1265,24 @@ legend  {
 }
 fieldset{
   margin: 0;
-  padding: 0;
+  padding: 0px 0px 3px 0px;
   border: none;
-  padding-bottom: 3px;
 }
-
 .filters ul {
   margin: 0;
   padding: 0;
 }
 .filters li {
   margin: 0;
-  padding: 0;
+  padding: 0px 35px ;
   position: relative;
-  padding: 0px 35px;
   margin-bottom: 16px;
 }
 legend {
   width: 220px;
   border-top: 1px solid #ccc;
   margin: 0;
-  padding: 0;
-  padding-top: 18px;
+  padding: 18px 0px 0px 0px;
   margin-bottom: 12px;
 }
 fieldset label {
@@ -1332,9 +1349,7 @@ fieldset label {
 .pagination {
   width: 300px;
   padding: 0;
-  margin: 0;
-  margin-bottom: 67px;
-  margin-top: 37px;
+  margin: 37px 0px 67px 0px;
 }
 .pagination-item{
   font: inherit;
@@ -1482,10 +1497,11 @@ fieldset label {
 #login-text:focus{
   border: 2px solid #ee3643;
 }
+
 .modal {
   position: fixed;
   background-color: #ffffff;
-  z-index: 20;
+
 }
 .modal-basket{
   display: none;
@@ -1555,12 +1571,15 @@ fieldset label {
 .modal-map {
   display: none;
   top: 110px;
+  background-image: url(../img/map.jpg);
+  width:940px;
+  height: 446px;
   transform: translateX(10%);
   box-shadow: 0px 20px 40px 0 rgba(41, 52, 73, 0.75);
-  margin: 0;
 }
-.modal-map p{
-  margin: 0;
+.modal-map iframe {
+  position: relative;
+  border: none;
 }
 .modal-map .modal-close,
 .comment-form .modal-close,
@@ -1572,8 +1591,10 @@ fieldset label {
   width: 21px;
   height: 21px;
   border: none;
+  outline: none;
+
 }
-.map-fon a{
+.map-fon {
   display: inline-block;
   width: 300px;
   height: 158px;
@@ -1621,8 +1642,46 @@ fieldset label {
   margin-left: 80px;
   margin-bottom: 35px;
 }
+@keyframes bounce {
+  0% {
+    transform: translateY(-2000px) translateX(50%);
+  }
+
+  70% {
+    transform: translateY(30px) translateX(50%);
+  }
+
+  90% {
+    transform: translateY(-10px) translateX(50%);
+  }
+
+  100% {
+    transform: translateY(0) translateX(50%) ;
+  }
+}
+@keyframes shake {
+  0%,
+  100% {
+    transform: translate(50%);
+  }
+
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    transform: translateX(44%);
+  }
+
+  20%,
+  40%,
+  60%,
+  80% {
+    transform: translateX(55%);
+  }
+}
 .comment {
-  display: none;
+  display:none;
   position: fixed;
   transform: translateX(50%);
   top: 110px;
@@ -1666,11 +1725,21 @@ fieldset label {
 .comment-button{
  padding: 35px 0;
 }
-
+.modal-show {
+  display: block;
+  animation: bounce 0.6s;
+}
+.modal-show-map{
+  display: block;
+}
+.modal-error {
+  animation: shake 0.6s;
+}
 .radio input {
   position: absolute;
   z-index: -1;
   opacity: 0;
+  cursor: pointer;
 }
 .radio-text {
   position: relative;
@@ -1683,10 +1752,11 @@ fieldset label {
   background-image: url(../img/radio-off.png);
   background-repeat: no-repeat;
   background-position: 0 0;
-  top:0px;
+  top:-3px;
   left: -36px;
   width: 25px;
   height: 25px;
+
 }
 .radio-text:after {
   content: "";
@@ -1694,11 +1764,12 @@ fieldset label {
   background-image: url(../img/radio-on.png);
   background-repeat: no-repeat;
   background-position: 0 0;
-  top:0px;
+  top:-3px;
   left: -36px;
   width: 25px;
   height: 25px;
   opacity: 0;
+
 }
 .radio input:checked + .radio-text:after {
   opacity: 1;
@@ -1711,6 +1782,7 @@ fieldset label {
 }
 .checkbox + label {
   position: relative;
+  cursor: pointer;
 }
 .checkbox + label:before {
   content: "";
