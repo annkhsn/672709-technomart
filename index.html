@@ -81,26 +81,26 @@
             <label class="arrow2" for="btn-2"></label>
           </div>
           <div class="slides">
-              <div class="slider-1">
-                <div class="slide">
-                  <img src="img/slide-2.jpg" width="620" height="266" alt="слайд2">
-                  <div class="slide-text">
-                    <div class="slide-title">Перфораторы</div>
-                    <p>Настоящие мужские игрушки!</p>
-                    <a class="button" href="#">Открыть каталог</a>
-                  </div>
+            <div class="slider-1">
+              <div class="slide">
+                <img src="img/slide-2.jpg" width="620" height="266" alt="слайд2">
+                <div class="slide-text">
+                  <div class="slide-title">Перфораторы</div>
+                  <p>Настоящие мужские игрушки!</p>
+                  <a class="button" href="#">Открыть каталог</a>
                 </div>
               </div>
-              <div class="slider-2">
-                <div class="slide">
-                  <img src="img/slide-1.jpg" width="620" height="266" alt="слайд1">
-                  <div class="slide-text">
-                    <div class="slide-title">Дрели</div>
-                    <p>Соседям на радость!</p>
-                    <a class="button" href="catalog.html">Открыть каталог</a>
-                  </div>
+            </div>
+            <div class="slider-2">
+              <div class="slide">
+                <img src="img/slide-1.jpg" width="620" height="266" alt="слайд1">
+                <div class="slide-text">
+                  <div class="slide-title">Дрели</div>
+                  <p>Соседям на радость!</p>
+                  <a class="button" href="catalog.html">Открыть каталог</a>
                 </div>
               </div>
+            </div>
           </div>
         </div>
         <div class="features-item-column">
@@ -197,46 +197,50 @@
         </div>
         <div class="service-slide">
 
-          <input class="slider-btn" type="radio" name="slide-btn" id="slide-1" checked>
-          <input class="slider-btn" type="radio" name="slide-btn" id="slide-2">
-          <input class="slider-btn" type="radio" name="slide-btn" id="slide-3">
+          <input type="radio" name="slide-btn" id="slide-1" checked>
+          <input type="radio" name="slide-btn" id="slide-2">
+          <input type="radio" name="slide-btn" id="slide-3">
 
           <div class="service-controls">
             <label class="slide-1" for="slide-1">Доставка</label>
             <label class="slide-2" for="slide-2">Гарантия</label>
             <label class="slide-3" for="slide-3">Кредит</label>
           </div>
+          <div class="slider-inner">
+          <div class="slide-wrapper">
 
-          <div class="slide-item">
-            <div class="service-text slide-1">
-              <div class="service-title">Доставка</div>
-              <p>Мы с удовольствием доставим ваш товар прямо<br>
-                к вашему подъезду совершенно бесплатно!<br>
-                Ведь мы неплохо заработаем,<br>
-                поднимая его на ваш этаж!</p>
+            <div class="slide-item">
+              <div class="service-text slide-1">
+                <div class="service-title">Доставка</div>
+                <p>Мы с удовольствием доставим ваш товар прямо<br>
+                  к вашему подъезду совершенно бесплатно!<br>
+                  Ведь мы неплохо заработаем,<br>
+                  поднимая его на ваш этаж!</p>
+              </div>
             </div>
-          </div>
 
-          <div class="slide-item">
-            <div class="service-text slide-2">
-              <div class="service-title">Гарантия</div>
-              <p>Если купленный у нас товар поломается или заискрит,<br>
-                а также в случае пожара, спровоцированного его возгаранием,<br>
-                вы всегда можете быть уверены в нашей гарантии.
-                Мы обменяем<br> сгоревший товар на новый.<br>
-                Дом уж восстановите как-нибудь сами.</p>
+            <div class="slide-item">
+              <div class="service-text slide-2">
+                <div class="service-title">Гарантия</div>
+                <p>Если купленный у нас товар поломается или заискрит,<br>
+                  а также в случае пожара, спровоцированного его возгаранием,<br>
+                  вы всегда можете быть уверены в нашей гарантии.
+                  Мы обменяем<br> сгоревший товар на новый.<br>
+                  Дом уж восстановите как-нибудь сами.</p>
+              </div>
             </div>
-          </div>
 
-          <div class="slide-item">
-            <div class="service-text slide-3">
-              <div class="service-title">Кредит</div>
-              <p>Залезть в долговую яму стало проще!<br>
-                Кредитные консультанты придут вам на помощь.</p>
-              <a href="#" class="button">Отправить заявку</a>
+            <div class="slide-item">
+              <div class="service-text slide-3">
+                <div class="service-title">Кредит</div>
+                <p>Залезть в долговую яму стало проще!<br>
+                  Кредитные консультанты придут вам на помощь.</p>
+                <a href="#" class="button">Отправить заявку</a>
+              </div>
             </div>
           </div>
         </div>
+      </div>
       </div>
     </section>
 
@@ -262,7 +266,7 @@
           <h2>Контакты</h2>
           <p>Вы можете забрать товар сами,<br>
             заехав в наш офис:</p>
-            <a class="map-fon contacts-button-map" href="#"></a>
+          <a class="map-fon contacts-button-map" href="#"></a>
           <a class="maps-button" href="#">заблудились? напишите нам</a>
         </div>
       </div>
@@ -321,13 +325,14 @@
         <label for="login-text">Ваше имя:</label>
         <input id="login-text" type="text" name="name" placeholder="Представьтесь, пожалуйста">
       </p>
-    <div class="comment-button"><button type="submit">Отправить</button></div>
+      <div class="comment-button"><button type="submit">Отправить</button></div>
     </form>
   </div>
   <div class="modal-map modal">
     <h2 class="visually-hidden">Как до нас добраться</h2>
-    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1998.6227335291258!2d30.323063510589595!3d59.93840211849747!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1544818527030" width="960" height="446" frameborder="0" style="border:0" allowfullscreen></iframe>
-    <button class="modal-close" type="button"></button>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1998.6227335291258!2d30.323063510589595!3d59.93840211849747!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1544818527030"
+      width="960" height="446" frameborder="0" style="border:0" allowfullscreen></iframe>
+    <button class="modal-close map-close" type="button"></button>
   </div>
   <div class="comment modal">
     <form class="comment-form" method="post" action="https://echo.htmlacademy.ru">
@@ -344,13 +349,16 @@
         <textarea name="email-text" id="email-text" rows="5">В свободной форме</textarea>
       </p>
       <div class="comment-button"><button type="submit">Отправить</button></div>
-      <button class="modal-close" type="button"></button>
+      <button class="modal-close close-btn" type="button"></button>
     </form>
   </div>
   <script>
     var link = document.querySelector(".maps-button");
     var popup = document.querySelector(".comment");
-    var close = popup.querySelector(".modal-close");
+    var close = popup.querySelector(".close-btn");
+    var mapLink = document.querySelector(".map-fon");
+    var mapPopup = document.querySelector(".modal-map");
+    var mapClose = mapPopup.querySelector(".map-close");
     var login = popup.querySelector("[name=name]");
     var form = popup.querySelector("form");
     var email = popup.querySelector("[name=email]");
@@ -364,7 +372,7 @@
       isStorageSupport = false;
     }
 
-    link.addEventListener("click", function (evt) {
+    link.addEventListener("click", function(evt) {
       evt.preventDefault();
       popup.classList.add("modal-show");
 
@@ -376,13 +384,13 @@
       }
     });
 
-    close.addEventListener("click", function (evt) {
-    evt.preventDefault();
-    popup.classList.remove("modal-show");
-    popup.classList.remove("modal-error");
+    close.addEventListener("click", function(evt) {
+      evt.preventDefault();
+      popup.classList.remove("modal-show");
+      popup.classList.remove("modal-error");
     });
 
-    form.addEventListener("submit", function (evt) {
+    form.addEventListener("submit", function(evt) {
       if (!login.value || !email.value) {
         evt.preventDefault();
         popup.classList.remove("modal-error");
@@ -395,7 +403,7 @@
       }
     });
 
-    window.addEventListener("keydown", function (evt) {
+    window.addEventListener("keydown", function(evt) {
       if (evt.keyCode === 27) {
         evt.preventDefault();
         if (popup.classList.contains("modal-show")) {
@@ -405,22 +413,19 @@
       }
     });
 
-    var mapLink = document.querySelector(".map-fon");
 
-    var mapPopup = document.querySelector(".modal-map");
-    var mapClose = mapPopup.querySelector(".modal-close");
 
-      mapLink.addEventListener("click", function (evt) {
+    mapLink.addEventListener("click", function(evt) {
       evt.preventDefault();
       mapPopup.classList.add("modal-show-map");
     });
 
-    mapClose.addEventListener("click", function (evt) {
+    mapClose.addEventListener("click", function(evt) {
       evt.preventDefault();
       mapPopup.classList.remove("modal-show-map");
     });
 
-    window.addEventListener("keydown", function (evt) {
+    window.addEventListener("keydown", function(evt) {
       evt.preventDefault();
       if (evt.keyCode === 27) {
         if (mapPopup.classList.contains("modal-show-map")) {
@@ -428,7 +433,6 @@
         }
       }
     });
-
   </script>
 </body>
 

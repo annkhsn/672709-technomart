@@ -91,7 +91,7 @@
               <ul>
                 <li>
                   <input type="checkbox" class="checkbox" id="bosch" checked>
-                  <label  for="bosch">Bosch</label>
+                  <label for="bosch">Bosch</label>
                 </li>
                 <li>
                   <input type="checkbox" class="checkbox" id="interscop">
@@ -99,7 +99,7 @@
                 </li>
                 <li>
                   <input type="checkbox" class="checkbox" id="makita" checked>
-                  <label  for="makita">Makita</label>
+                  <label for="makita">Makita</label>
                 </li>
                 <li>
                   <input type="checkbox" class="checkbox" id="dewalt">
@@ -116,14 +116,14 @@
               <ul>
                 <li>
                   <label for="battery" class="radio">
-                  <input  type="radio" name="product-group" id="battery">
-                  <span class="radio-text">
-                  Аккумуляторные</span></label>
+                    <input type="radio" name="product-group" id="battery">
+                    <span class="radio-text">
+                      Аккумуляторные</span></label>
                 </li>
                 <li>
                   <label for="mains-power" class="radio">
-                  <input type="radio" name="product-group"  id="mains-power">
-                  <span class="radio-text">Сетевые</span></label>
+                    <input type="radio" name="product-group" id="mains-power">
+                    <span class="radio-text">Сетевые</span></label>
                 </li>
               </ul>
             </fieldset>
@@ -253,12 +253,12 @@
             </div>
           </div>
 
-            <div class="pagination">
-              <a class="pagination-item pagination-item-current" href="#" aria-label="Страница 1">1</a>
-              <a class="pagination-item">2</a>
-              <a class="pagination-item" href="#" aria-label="Страница 3">3</a>
-              <a class="pagination-item pangination-next" href="#" aria-label="Следущая страница">Следующая</a>
-            </div>
+          <div class="pagination">
+            <a class="pagination-item pagination-item-current" href="#" aria-label="Страница 1">1</a>
+            <a class="pagination-item">2</a>
+            <a class="pagination-item" href="#" aria-label="Страница 3">3</a>
+            <a class="pagination-item pangination-next" href="#" aria-label="Следущая страница">Следующая</a>
+          </div>
         </section>
       </div>
     </div>
@@ -325,6 +325,23 @@
       <button class="modal-close" type="button"></button>
     </div>
   </div>
+  <script>
+    var buylink = document.querySelector(".buy");
+    var buypopup = document.querySelector(".modal-basket");
+    var close = buypopup.querySelector(".modal-close");
+
+    buylink.addEventListener("click", function(evt) {
+      evt.preventDefault();
+      buypopup.classList.add("modal-show");
+
+    });
+
+    close.addEventListener("click", function(evt) {
+      evt.preventDefault();
+      buypopup.classList.remove("modal-show");
+    });
+
+  </script>
 </body>
 
 </html>

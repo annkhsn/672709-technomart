@@ -695,15 +695,15 @@ opacity: 0.5;
 }
 .slider-controls {
   position: absolute;
-  bottom: 10px;
-  left: 290px;
+  bottom: 27px;
+  left: 291px;
   z-index: 2;
 }
 .slider-controls label {
   display: inline-block;
   margin: 0 3px;
-  width: 7px;
-  height: 7px;
+  width: 5px;
+  height: 5px;
   border-radius: 50%;
   cursor: pointer;
   border: 3px solid white;
@@ -882,31 +882,46 @@ width: 300px;
   box-shadow: inset 0px -1px 0 0 #33445a;
   cursor: pointer;
 }
+.service-controls .slide-1:hover,
 .service-controls .slide-2:hover,
 .service-controls .slide-3:hover {
   background-color:#293449;
 }
-.service-controls .slide-2:active,
-.service-controls .slide-3:active {
+
+.slider-inner {
+  display: inline-block;
+  overflow: hidden;
+  width: 695px;
+}
+.slide-wrapper {
+  width: 300%;
+}
+#slide-1:checked ~ .service-controls label[for="slide-1"],
+#slide-2:checked ~ .service-controls label[for="slide-2"],
+#slide-3:checked ~ .service-controls label[for="slide-3"] {
   color: #32425c;
   background-color:#ffffff;
 }
-.service-controls .slide-1 {
-  color: #32425c;
-  background-color:#ffffff;
+#slide-1:checked ~ .slider-inner .slide-item {
+  transform: translate(0);
 }
-.slide-2,
-.slide-3{
-  display:none;
+
+#slide-2:checked ~ .slider-inner .slide-item {
+  transform: translate(-695px);
+}
+
+#slide-3:checked ~ .slider-inner .slide-item {
+  transform: translate(-1390px);
 }
 .slide-item{
   display: inline-block;
   box-sizing: border-box;
   width: 620px;
-  margin-left: 75px ;
+  margin-left:75px ;
+  float: left;
 }
 .slide-item .slide-1{
-  display:;
+  margin-bottom: 40px;
   background-image: url(../img/Layer-131.png);
   background-repeat: no-repeat;
   background-position: 153px 25px;
@@ -915,7 +930,7 @@ width: 300px;
 .slide-item .slide-2{
   background-image: url(../img/layer-130.png);
   background-repeat: no-repeat;
-  background-position: 153px 25px;
+  background-position: 230px 25px;
   min-height: 238px;
 }
 .slide-item .slide-3{
@@ -1501,7 +1516,7 @@ fieldset label {
 .modal {
   position: fixed;
   background-color: #ffffff;
-
+  z-index: 20;
 }
 .modal-basket{
   display: none;
@@ -1579,6 +1594,7 @@ fieldset label {
 }
 .modal-map iframe {
   position: relative;
+  z-index: 2;
   border: none;
 }
 .modal-map .modal-close,
@@ -1592,7 +1608,7 @@ fieldset label {
   height: 21px;
   border: none;
   outline: none;
-
+  z-index: 3;
 }
 .map-fon {
   display: inline-block;
@@ -1689,6 +1705,7 @@ fieldset label {
   box-shadow: 0px 20px 40px 0 rgba(0, 0, 0, 0.75);
   border-top: 7px solid #ee3643;
   padding-top: 35px;
+
 }
 .comment-items label{
   margin-bottom: 5px;
