@@ -315,6 +315,7 @@ opacity: 0.5;
   margin: -1px;
 }
 .user-order a {
+  position: relative;
   display: inline-block;
   font-family: Cuprum;
   font-size: 16px;
@@ -323,6 +324,15 @@ opacity: 0.5;
   margin-left: 68px;
   margin-right: -41px;
   color: #32425c;
+}
+.user-order span {
+  position: absolute;
+  background-color: black;
+  width: 4px;
+  height: 5px;
+  top: 6px;
+  left: -16px;
+  border-radius: 50%;
 }
 .user-order a:hover {
   color: #ee3643;
