@@ -1146,13 +1146,11 @@ padding: 0;
 .breadcrumbs a {
   font: inherit;
   line-height: 1.38;
-  letter-spacing: normal;
   text-align: left;
   color: #000000;
   text-transform: uppercase;
 }
 .breadcrumbs {
-  display: inline-block;
   position: relative;
   padding: 0;
   margin: 0;
@@ -1351,6 +1349,7 @@ fieldset label {
   margin-right: 140px;
 }
 .sort-nav {
+  position: relative;
   display: flex;
   justify-content: space-between;
   width: 355px;
@@ -1369,6 +1368,48 @@ fieldset label {
 .sort-nav a:active,
 .sort-btn .btn:active {
   color: #ee3643;
+  border-bottom: none;
+}
+.sort-nav a:first-child {
+  color: #ee3643;
+  border-bottom: none;
+}
+.sort-nav .up {
+  position: absolute;
+  background-image: url(../img/icon-up-red.png);
+  background-repeat: no-repeat;
+  top: 4px;
+  right:-59px;
+  width: 11px;
+  height: 10px;
+  border-bottom: none;
+}
+.sort-nav .down {
+  position: absolute;
+  background-image: url(../img/icon-down-black.png);
+  background-repeat: no-repeat;
+  top: 4px;
+  right:-90px;
+  width: 11px;
+  height: 10px;
+ opacity: 0.2;
+ border-bottom: none;
+}
+.sort-nav .up:hover {
+  background-image: url(../img/icon-up-black.png);
+  border-bottom: none;
+}
+.sort-nav .down:hover {
+background-image: url(../img/icon-down-black.png);
+opacity: 1;
+border-bottom: none;
+}
+.sort-nav .up:active {
+  background-image: url(../img/icon-up-red.png);
+  border-bottom: none;
+}
+.sort-nav .down:active {
+  background-image: url(../img/icon-down-red.png);
   border-bottom: none;
 }
 .filters ul {
