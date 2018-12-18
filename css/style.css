@@ -160,7 +160,7 @@ input[type="search"]:active {
 .header-contact-catalog{
   margin-bottom: 0px;
 }
-.main-nav ul {
+.main-nav {
   margin: 0;
   padding: 0 20px;
   display: flex;
@@ -173,15 +173,15 @@ input[type="search"]:active {
   list-style: none;
   box-shadow: inset 0px -5px 0 0 #293449;
 }
-.main-nav li:hover{
+.main-nav a:hover{
 background-color: #293449;
 }
-.main-nav li:active{
+.main-nav a:active{
 background-color: #293449;
 color: rgba(255, 255, 255, 0.5);
 opacity: 0.5;
 }
-.main-nav li {
+.main-nav a {
   padding: 20px 20px 23px 20px;
   list-style: none;
   text-align: center;
@@ -478,7 +478,6 @@ opacity: 0.5;
 }
 .catalog-item{
   position:relative;
-  display:inline-block;
   width:220px;
   margin-bottom:22px;
   border:1px solid #ccc;
@@ -572,9 +571,10 @@ opacity: 0.5;
   display: flex;
   align-items: center;
   justify-content: center;
-  height:168px;
-  padding-right: 7px;
-  margin: 0px 10px 13px 0px;
+  height:171px;
+  padding-right:20px;
+  padding-bottom: 10px;
+
 }
 .catalog-item .image img{
   max-width:100%;
@@ -641,7 +641,7 @@ opacity: 0.5;
   align-items: center;
   justify-content: center;
   width: 220px;
-  min-height:142px;
+  height:142px;
   border:1px solid #ccc;
   margin-bottom: 22px;
 }
@@ -882,6 +882,9 @@ width: 300px;
   box-shadow: inset 0px -1px 0 0 #33445a;
   cursor: pointer;
 }
+.service-controls label:last-child{
+  box-shadow:none;
+}
 .service-controls .slide-1:hover,
 .service-controls .slide-2:hover,
 .service-controls .slide-3:hover {
@@ -1041,7 +1044,8 @@ margin-top: 30px;
  .footer-top ul {
    list-style: none;
  }
- .footer-contacts h2 {
+.footer-contacts .footer-logo {
+   display: inline-block;
    margin: 0;
    font-family: Cuprum;
    font-size: 30px;
@@ -1054,10 +1058,6 @@ margin-top: 30px;
    margin-bottom: 29px;
    text-transform: uppercase;
 }
- .footer-contacts h2 a {
-   font: inherit;
- }
-
  .footer-contacts p ,
  .footer-contacts a {
    margin: 0;
@@ -1124,6 +1124,19 @@ padding: 0;
 .email{
   margin-right: 50px;
 }
+.breadcrumbs-container{
+  position: relative;
+  display: flex;
+}
+.breadcrumbs-link {
+  position: absolute;
+  background-image: url(../img/icon-home.png);
+  background-repeat: no-repeat;
+  top: 23px;
+  left:-1px;
+  width: 14px;
+  height: 12px;
+}
 .breadcrumbs a {
   font: inherit;
   line-height: 1.38;
@@ -1131,23 +1144,21 @@ padding: 0;
   text-align: left;
   color: #000000;
   text-transform: uppercase;
-
 }
-.breadcrumbs{
+.breadcrumbs {
+  display: inline-block;
   position: relative;
   padding: 0;
   margin: 0;
   display: flex;
   width: 360px;
-  padding-left: 55px;
-
+  margin-left: 53px;
 }
 .breadcrumbs li {
   position: relative;
   list-style: none;
   line-height: 1.38;
   padding: 22px 41px 20px 0px;
-
 }
 .breadcrumbs li::before{
   content: "";
@@ -1159,7 +1170,7 @@ padding: 0;
   background-position: 0 0;
   width: 8px;
   height: 12px;
-}
+}/*
 .breadcrumbs::after{
   content: "";
   position: absolute;
@@ -1170,7 +1181,7 @@ padding: 0;
   background-position: 0 0;
   width: 14px;
   height: 12px;
-}
+}*/
 
 .page-title  {
   margin: 0;
@@ -1310,10 +1321,11 @@ fieldset label {
   width: 140px;
   background-color: white;
   border: 2px solid #e5e5e5;
-  padding: 10px 40px;
+  padding: 11px 0px;
   text-transform: uppercase;
   border-radius: 3px;
   margin-top: 57px;
+  text-align: center;
 }
 .sort  {
   display: flex;
@@ -1362,7 +1374,7 @@ fieldset label {
  color: black;
 }
 .pagination {
-  width: 300px;
+
   padding: 0;
   margin: 37px 0px 67px 0px;
 }
@@ -1427,22 +1439,24 @@ fieldset label {
 .email  a:active,
 .develop a:active {
   color: #ee3643;
+  text-decoration: none;
 }
 .footer-social a:hover,
 .footer-social a:active {
   background-color: #ee3643;
+
 }
 .footer-social {
   display: flex;
   justify-content: space-between;
-  width: 132px;
+  width: 130px;
   position: relative;
   margin-right: 120px;
 
 }
 .footer-social a{
-  width: 41px;
-  height: 41px;
+  width: 40px;
+  height: 40px;
   border-radius: 50px;
   background-color: #000000;
 }
@@ -1521,7 +1535,8 @@ fieldset label {
 .modal-basket{
   display: none;
   top: 200px;
-  transform: translateX(50%);
+  left: 50%;
+  transform: translateX(-50%);
   width: 620px;
   padding-top: 75px;
 
@@ -1622,6 +1637,9 @@ fieldset label {
   display: flex;
   flex-wrap: wrap;
 }
+textarea  {
+  resize: none;
+}
 .comment p {
   font-family: Cuprum;
   font-size: 17.5px;
@@ -1660,19 +1678,19 @@ fieldset label {
 }
 @keyframes bounce {
   0% {
-    transform: translateY(-2000px) translateX(50%);
+    transform: translateY(-2000px) translateX(-50%);
   }
 
   70% {
-    transform: translateY(30px) translateX(50%);
+    transform: translateY(30px) translateX(-50%);
   }
 
   90% {
-    transform: translateY(-10px) translateX(50%);
+    transform: translateY(-10px) translateX(-50%);
   }
 
   100% {
-    transform: translateY(0) translateX(50%) ;
+    transform: translateY(0) translateX(-50%) ;
   }
 }
 @keyframes shake {
@@ -1699,7 +1717,8 @@ fieldset label {
 .comment {
   display:none;
   position: fixed;
-  transform: translateX(50%);
+  left: 50%;
+  transform: translateX(-50%);
   top: 110px;
   width: 620px;
   box-shadow: 0px 20px 40px 0 rgba(0, 0, 0, 0.75);

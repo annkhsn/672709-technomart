@@ -45,15 +45,13 @@
         </div>
         <div class="header-nav">
           <nav class="main-nav">
-            <ul>
-              <li><a href="#">Главная</a></li>
-              <li><a href="#">Компания</a></li>
-              <li><a href="#">Каталог</a></li>
-              <li><a href="#">Новости</a></li>
-              <li><a href="#">Спецпредложения</a></li>
-              <li><a href="#">Доставка</a></li>
-              <li><a href="#">Контакты</a></li>
-            </ul>
+            <a href="index.ht">Главная</a>
+            <a href="#">Компания</a>
+            <a href="#">Каталог</a>
+            <a href="#">Новости</a>
+            <a href="#">Спецпредложения</a>
+            <a href="#">Доставка</a>
+            <a href="#">Контакты</a>
           </nav>
         </div>
       </div>
@@ -61,11 +59,14 @@
   </header>
   <main>
     <div class="container">
+      <div class="breadcrumbs-container">
+      <a href="index.html" class="breadcrumbs-link"></a>
       <ul class="breadcrumbs">
         <li><a href="#">Каталог</a></li>
         <li><a href="#">Инструмент</a></li>
         <li><a class="breadcrumbs-current">Перфораторы</a></li>
       </ul>
+    </div>
       <h1 class="page-title">Перфораторы</h1>
       <div class="catalog-columns">
         <section class="filters">
@@ -276,7 +277,7 @@
     <div class="footer-top">
       <div class="container">
         <div class="footer-contacts">
-          <h2><a class="footer-logo" href="index.html">Техномарт</a></h2>
+          <a class="footer-logo" href="index.html">Техномарт</a>
           <p>г. Санкт-Петербург, ул. Б. Конюшенная, д.19/8</p>
           <a href="tel:+7(812)555-05-55">+7 (812) 555-05-55</a>
         </div>
@@ -318,30 +319,14 @@
     </div>
   </footer>
   <div class="modal-basket modal">
-    <p>Товар добавлен в карзину!</p>
+    <p>Товар добавлен в кoрзину!</p>
     <div class="buttons">
       <a href="#" class="order-btn">Оформить заказ</a>
       <button class="next-btn">Продолжить покупки</button>
       <button class="modal-close" type="button"></button>
     </div>
   </div>
-  <script>
-    var buylink = document.querySelector(".buy");
-    var buypopup = document.querySelector(".modal-basket");
-    var close = buypopup.querySelector(".modal-close");
-
-    buylink.addEventListener("click", function(evt) {
-      evt.preventDefault();
-      buypopup.classList.add("modal-show");
-
-    });
-
-    close.addEventListener("click", function(evt) {
-      evt.preventDefault();
-      buypopup.classList.remove("modal-show");
-    });
-
-  </script>
+<script src="js/main.js"></script>
 </body>
 
 </html>
