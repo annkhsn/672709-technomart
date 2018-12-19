@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style.min.css">
   <title>HTML Academy: Техномарт</title>
   <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
 </head>
@@ -13,7 +13,7 @@
   <header>
     <div class="header-top">
       <div class="container">
-        <a class="logo" href="#">Техномарт</a>
+        <a class="logo header-logo" href="#">Техномарт</a>
         <form action="https://echo.htmlacademy.ru" method="get">
           <input type="search" name="search" placeholder="Поиск:">
           <button type="submit"></button>
@@ -37,13 +37,13 @@
           </div>
         </div>
         <nav class="main-nav">
-            <a href="#">Главная</a>
-            <a href="#">Компания</a>
-            <a href="catalog.html">Каталог</a>
-            <a href="#">Новости</a>
-            <a href="#">Спецпредложения</a>
-            <a href="#">Доставка</a>
-            <a href="#">Контакты</a>
+          <a href="#">Главная</a>
+          <a href="#">Компания</a>
+          <a href="catalog.html">Каталог</a>
+          <a href="#">Новости</a>
+          <a href="#">Спецпредложения</a>
+          <a href="#">Доставка</a>
+          <a href="#">Контакты</a>
         </nav>
       </div>
     </div>
@@ -84,7 +84,7 @@
                 <div class="slide-text">
                   <div class="slide-title">Перфораторы</div>
                   <p>Настоящие мужские игрушки!</p>
-                  <a class="button" href="#">Открыть каталог</a>
+                  <a class="slide-button button" href="#">Открыть каталог</a>
                 </div>
               </div>
             </div>
@@ -94,7 +94,7 @@
                 <div class="slide-text">
                   <div class="slide-title">Дрели</div>
                   <p>Соседям на радость!</p>
-                  <a class="button" href="catalog.html">Открыть каталог</a>
+                  <a class="slide-button button" href="catalog.html">Открыть каталог</a>
                 </div>
               </div>
             </div>
@@ -114,8 +114,8 @@
     </section>
     <section class="products container">
       <div class="products-top">
-        <h2>Популярные товары:</h2>
-        <a class="products-button" href="#">Все популярные товары</a>
+        <h2 class="title-item">Популярные товары:</h2>
+        <a class="products-button button" href="#">Все популярные товары</a>
       </div>
       <div class="catalog-items">
         <div class="catalog-item">
@@ -168,8 +168,8 @@
     <section class="brends">
       <div class="container">
         <div class="brends-top">
-          <h2>Популярные производители:</h2>
-          <a class="products-button" href="#">Все производители</a>
+          <h2 class="title-item">Популярные производители:</h2>
+          <a class="products-button button" href="#">Все производители</a>
         </div>
         <div class="brends-item">
           <a href="#"><img src="img/bosch.jpg" width="126" height="37" alt="Bosch"></a>
@@ -186,7 +186,7 @@
     <section class="service">
       <div class="container">
         <div class="title-service">
-          <h2>Сервисы</h2>
+          <h2 class="title-item">Сервисы</h2>
           <p class="text">
             Хороший интернет-магазин отличается от плохого не только ценами!
             Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными
@@ -204,47 +204,47 @@
             <label class="slide-3" for="slide-3">Кредит</label>
           </div>
           <div class="slider-inner">
-          <div class="slide-wrapper">
+            <div class="slide-wrapper">
 
-            <div class="slide-item">
-              <div class="service-text slide-1">
-                <div class="service-title">Доставка</div>
-                <p>Мы с удовольствием доставим ваш товар прямо<br>
-                  к вашему подъезду совершенно бесплатно!<br>
-                  Ведь мы неплохо заработаем,<br>
-                  поднимая его на ваш этаж!</p>
+              <div class="slide-item">
+                <div class="service-text slide-1">
+                  <div class="title-item service-title">Доставка</div>
+                  <p>Мы с удовольствием доставим ваш товар прямо<br>
+                    к вашему подъезду совершенно бесплатно!<br>
+                    Ведь мы неплохо заработаем,<br>
+                    поднимая его на ваш этаж!</p>
+                </div>
               </div>
-            </div>
 
-            <div class="slide-item">
-              <div class="service-text slide-2">
-                <div class="service-title">Гарантия</div>
-                <p>Если купленный у нас товар поломается или заискрит,<br>
-                  а также в случае пожара, спровоцированного его возгаранием,<br>
-                  вы всегда можете быть уверены в нашей гарантии.
-                  Мы обменяем<br> сгоревший товар на новый.<br>
-                  Дом уж восстановите как-нибудь сами.</p>
+              <div class="slide-item">
+                <div class="service-text slide-2">
+                  <div class="title-item service-title">Гарантия</div>
+                  <p>Если купленный у нас товар поломается или заискрит,<br>
+                    а также в случае пожара, спровоцированного его возгаранием,<br>
+                    вы всегда можете быть уверены в нашей гарантии.
+                    Мы обменяем<br> сгоревший товар на новый.<br>
+                    Дом уж восстановите как-нибудь сами.</p>
+                </div>
               </div>
-            </div>
 
-            <div class="slide-item">
-              <div class="service-text slide-3">
-                <div class="service-title">Кредит</div>
-                <p>Залезть в долговую яму стало проще!<br>
-                  Кредитные консультанты придут вам на помощь.</p>
-                <a href="#" class="button">Отправить заявку</a>
+              <div class="slide-item">
+                <div class="service-text slide-3">
+                  <div class="title-item service-title">Кредит</div>
+                  <p>Залезть в долговую яму стало проще!<br>
+                    Кредитные консультанты придут вам на помощь.</p>
+                  <a href="#" class="service-button button">Отправить заявку</a>
+                </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
       </div>
     </section>
 
     <section class="contacts">
       <div class="container">
         <div class="about-us">
-          <h2>Компания«Техномарт»</h2>
+          <h2 class="title-item">Компания «Техномарт»</h2>
           <p>Настоящий мужской шоппинг начинается здесь!Огромный выбор товаров для ремонта и
             строительства не оставит равнодушными любителей сэкономить
             на гастарбайтерах.
@@ -257,14 +257,14 @@
             <li>Автотрейдинг</li>
             <li>ЖелДорЭкспедиция</li>
           </ul>
-          <a class="about-us-button" href="#">Подробнее о компании</a>
+          <a class="about-us-button button" href="#">Подробнее о компании</a>
         </div>
         <div class="map">
-          <h2>Контакты</h2>
+          <h2 class="title-item">Контакты</h2>
           <p>Вы можете забрать товар сами,<br>
             заехав в наш офис:</p>
           <a class="map-fon contacts-button-map" href="#"></a>
-          <a class="maps-button" href="#">заблудились? напишите нам</a>
+          <a class="maps-button button" href="#">заблудились? напишите нам!</a>
         </div>
       </div>
     </section>
@@ -273,19 +273,19 @@
     <div class="footer-top">
       <div class="container">
         <div class="footer-contacts">
-          <a class="footer-logo" href="index.html">Техномарт</a>
+          <a class="logo footer-logo" href="index.html">Техномарт</a>
           <p>г. Санкт-Петербург, ул. Б. Конюшенная, д.19/8</p>
           <a href="tel:+7(812)555-05-55">+7 (812) 555-05-55</a>
         </div>
         <div class="footer-column">
-          <ul class="footer-nav">
+          <ul class="footer-navigation footer-nav">
             <li><a href="#">Компания</a></li>
             <li><a href="#">Новости</a></li>
             <li><a href="#">Каталог</a></li>
             <li><a href="#">Доставка</a></li>
             <li><a href="#">Контакты</a></li>
           </ul>
-          <ul class="footer-nav-products">
+          <ul class="footer-navigation footer-nav-products">
             <li><a href="#">Материалы</a></li>
             <li><a href="#">Техника</a></li>
             <li><a href="#">Инструмент</a></li>
@@ -322,7 +322,7 @@
         <label for="login-text">Ваше имя:</label>
         <input id="login-text" type="text" name="name" placeholder="Представьтесь, пожалуйста">
       </p>
-      <div class="comment-button"><button type="submit">Отправить</button></div>
+      <div class="comment-button"><button class="button" type="submit">Отправить</button></div>
     </form>
   </div>
   <div class="modal-map modal">
@@ -345,11 +345,11 @@
         <label for="email-text">Текст письма:</label>
         <textarea name="email-text" id="email-text" rows="5">В свободной форме</textarea>
       </p>
-      <div class="comment-button"><button type="submit">Отправить</button></div>
-      <button class="modal-close close-btn" type="button"></button>
+      <div class="comment-button"><button class="button" type="submit">Отправить</button></div>
+      <button class="modal-close close-btn " type="button"></button>
     </form>
   </div>
- <script src="js/main.js"></script>
+  <script src="js/main.min.js"></script>
 </body>
 
 </html>
