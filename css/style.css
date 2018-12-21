@@ -191,7 +191,7 @@ input[type="search"]:active {
   margin-bottom: 0px;
 }
 
-.main-nav {
+.main-nav ul {
   padding: 0 20px;
   display: flex;
   justify-content: space-around;
@@ -204,17 +204,17 @@ input[type="search"]:active {
   box-shadow: inset 0px -5px 0 0 #293449;
 }
 
-.main-nav a:hover {
+.main-nav li:hover {
   background-color: #293449;
 }
 
-.main-nav a:active {
+.main-nav li:active {
   background-color: #293449;
   color: rgba(255, 255, 255, 0.5);
   opacity: 0.5;
 }
 
-.main-nav a {
+.main-nav li {
   padding: 20px 20px 23px 20px;
   list-style: none;
   text-align: center;
@@ -1419,6 +1419,7 @@ fieldset label {
   border: 2px solid #e5e5e5;
   padding: 11px 0px;
   margin-top: 57px;
+  cursor: pointer;
 }
 
 .sort {
@@ -1751,6 +1752,8 @@ fieldset label {
   color: #000000;
   background-color: #ffffff;
   cursor: pointer;
+  border: none;
+  outline: none;
 }
 
 .next-btn:hover,
