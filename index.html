@@ -69,8 +69,8 @@
       </div>
       <div class="slider-features">
         <div class="slider-img">
-          <input class="toggle1" type="radio" id="btn-1" name="toggle">
-          <input class="toggle2" type="radio" id="btn-2" name="toggle" checked>
+          <input value="toggle1" type="radio" id="btn-1" name="toggle">
+          <input value="toggle2" type="radio" id="btn-2" name="toggle" checked>
           <div class="slider-controls">
             <label for="btn-1"></label>
             <label for="btn-2"></label>
@@ -196,14 +196,14 @@
         </div>
         <div class="service-slide">
 
-          <input type="radio" name="slide-btn" id="slide-1" checked>
-          <input type="radio" name="slide-btn" id="slide-2">
-          <input type="radio" name="slide-btn" id="slide-3">
+          <input type="radio" name="slide-btn" id="slide-1" value="slide-1" checked>
+          <input type="radio" name="slide-btn" id="slide-2" value="slide-2">
+          <input type="radio" name="slide-btn" id="slide-3" value="slide-3">
 
           <div class="service-controls">
-            <label class="slide-1" for="slide-1">Доставка</label>
-            <label class="slide-2" for="slide-2">Гарантия</label>
-            <label class="slide-3" for="slide-3">Кредит</label>
+            <label for="slide-1">Доставка</label>
+            <label for="slide-2">Гарантия</label>
+            <label for="slide-3">Кредит</label>
           </div>
           <div class="slider-inner">
             <div class="slide-wrapper">
@@ -266,7 +266,7 @@
           <p>Вы можете забрать товар сами,<br>
             заехав в наш офис:</p>
           <a class="map-fon contacts-button-map" href="#"></a>
-          <a class="maps-button button" href="#">заблудились? напишите нам!</a>
+          <a class="maps-button button" href="comment.html">заблудились? напишите нам!</a>
         </div>
       </div>
     </section>
@@ -275,7 +275,7 @@
     <div class="footer-top">
       <div class="container">
         <div class="footer-contacts">
-          <a class="logo footer-logo" href="index.html">Техномарт</a>
+          <a class="logo footer-logo" href="#">Техномарт</a>
           <p>г. Санкт-Петербург, ул. Б. Конюшенная, д.19/8</p>
           <a href="tel:+7(812)555-05-55">+7 (812) 555-05-55</a>
         </div>
@@ -318,15 +318,6 @@
     </div>
   </footer>
 
-  <div class="login-link modal">
-    <form class="login-form" method="post" action="https://echo.htmlacademy.ru">
-      <p class="login-items">
-        <label for="login-text">Ваше имя:</label>
-        <input id="login-text" type="text" name="name" placeholder="Представьтесь, пожалуйста">
-      </p>
-      <div class="comment-button"><button class="button" type="submit">Отправить</button></div>
-    </form>
-  </div>
   <div class="modal-map modal">
     <h2 class="visually-hidden">Как до нас добраться</h2>
     <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1998.6227335291258!2d30.323063510589595!3d59.93840211849747!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1544818527030"

@@ -54,6 +54,7 @@ img {
 
 .footer-contacts .footer-logo {
   display: inline-block;
+  vertical-align: top;
   font-family: Cuprum;
   font-size: 30px;
   line-height: 30px;
@@ -240,6 +241,7 @@ input[type="search"]:active {
 
 .header-contacts a {
   display: inline-block;
+  vertical-align: top;
   font-family: Cuprum;
   font-size: 21px;
   color: #ee3643;
@@ -303,6 +305,7 @@ input[type="search"]:active {
 
 .user-login .login {
   display: inline-block;
+  vertical-align: top;
   box-sizing: border-box;
   width: 299px;
   padding: 9px 0px 11px 46px;
@@ -341,6 +344,7 @@ input[type="search"]:active {
 
 .user-log {
   display: inline-block;
+  vertical-align: top;
   box-sizing: border-box;
   margin-left: 69px;
   background-image: url(../img/icon-login.png);
@@ -352,6 +356,7 @@ input[type="search"]:active {
 
 .user-link {
   display: inline-block;
+  vertical-align: top;
   box-sizing: border-box;
   width: 150px;
   padding: 10px 25px 11px;
@@ -410,6 +415,7 @@ input[type="search"]:active {
 .features-item a {
   width: 135px;
   display: inline-block;
+  vertical-align: top;
   box-sizing: border-box;
   font-family: Cuprum;
   font-size: 14px;
@@ -803,21 +809,20 @@ input[type="search"]:active {
 
 .slider-controls {
   position: absolute;
-  bottom: 27px;
+  bottom: 22px;
   left: 291px;
   z-index: 2;
 }
 
 .slider-controls label {
   display: inline-block;
+  vertical-align: top;
   margin: 0 3px;
   width: 5px;
   height: 5px;
   border-radius: 50%;
   cursor: pointer;
   border: 3px solid white;
-  bottom: 10px;
-  z-index: 2;
   background-color: white;
 }
 
@@ -825,16 +830,16 @@ input[type="radio"] {
   display: none;
 }
 
-#btn-1:checked~.slider-controls label[for="btn-1"],
-#btn-2:checked~.slider-controls label[for="btn-2"] {
+input[value="toggle1"]:checked~.slider-controls label[for="btn-1"],
+input[value="toggle2"]:checked~.slider-controls label[for="btn-2"] {
   background-color: #ee3643;
 }
 
-#btn-1:checked~.slides {
+input[value="toggle1"]:checked~.slides {
   transform: translate(0);
 }
 
-#btn-2:checked~.slides {
+input[value="toggle2"]:checked~.slides {
   transform: translate(-620px);
 }
 
@@ -1007,6 +1012,7 @@ input[type="radio"] {
 
 .service-controls {
   display: inline-block;
+  vertical-align: top;
   width: 240px;
   vertical-align: top;
 }
@@ -1028,9 +1034,7 @@ input[type="radio"] {
   box-shadow: none;
 }
 
-.service-controls .slide-1:hover,
-.service-controls .slide-2:hover,
-.service-controls .slide-3:hover {
+.service-controls label:hover {
   background-color: #293449;
 }
 
@@ -1044,22 +1048,22 @@ input[type="radio"] {
   width: 300%;
 }
 
-#slide-1:checked~.service-controls label[for="slide-1"],
-#slide-2:checked~.service-controls label[for="slide-2"],
-#slide-3:checked~.service-controls label[for="slide-3"] {
+input[value="slide-1"]:checked~.service-controls label[for="slide-1"],
+input[value="slide-2"]:checked~.service-controls label[for="slide-2"],
+input[value="slide-3"]:checked~.service-controls label[for="slide-3"] {
   color: #32425c;
   background-color: #ffffff;
 }
 
-#slide-1:checked~.slider-inner .slide-item {
+input[value="slide-1"]:checked~.slider-inner .slide-item {
   transform: translate(0);
 }
 
-#slide-2:checked~.slider-inner .slide-item {
+input[value="slide-2"]:checked~.slider-inner .slide-item {
   transform: translate(-695px);
 }
 
-#slide-3:checked~.slider-inner .slide-item {
+input[value="slide-3"]:checked~.slider-inner .slide-item {
   transform: translate(-1390px);
 }
 
@@ -1668,38 +1672,6 @@ fieldset label {
   width: 940px;
 }
 
-.login-items {
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: column;
-  width: 220px;
-  margin-bottom: 20px;
-  margin-left: 80px;
-}
-
-.login-items label {
-  font-family: Cuprum;
-  font-size: 18px;
-  line-height: 1;
-  color: #000000;
-  margin-bottom: 13px;
-}
-
-#login-text {
-  color: #999999;
-  padding: 12px 16px;
-  border: 2px solid #d7dcde;
-  border-radius: 3px;
-}
-
-#login-text:hover {
-  border: 2px solid #b5b5b5;
-}
-
-#login-text:focus {
-  border: 2px solid #ee3643;
-}
-
 .modal {
   position: fixed;
   background-color: #ffffff;
@@ -1765,18 +1737,6 @@ fieldset label {
   background-color: #f1f1f1;
 }
 
-.login-link {
-  display: none;
-  position: absolute;
-  top: 110px;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 620px;
-  box-shadow: 0px 20px 40px 0 rgba(0, 0, 0, 0.75);
-  border-top: 7px solid #ee3643;
-  padding-top: 35px;
-}
-
 .modal-map {
   display: none;
   top: 110px;
@@ -1821,10 +1781,6 @@ fieldset label {
   flex-wrap: wrap;
 }
 
-textarea {
-  resize: none;
-}
-
 .comment p {
   font-family: Cuprum;
   font-size: 17.5px;
@@ -1833,9 +1789,8 @@ textarea {
   color: black;
 }
 
-#user-name,
-#user-email,
-#email-text {
+.comment-form input[type="text"],
+textarea {
   font-size: 14px;
   line-height: 1.25;
   text-align: left;
@@ -1845,7 +1800,8 @@ textarea {
   border-radius: 3px;
 }
 
-#email-text {
+textarea {
+  resize: none;
   padding: 13px 10px;
 }
 
